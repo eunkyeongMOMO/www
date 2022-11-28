@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코오롱글로벌</title>
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub4-2content.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/969baeb221.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+
+    <script>
+    // <![CDATA[
+    try {
+    window.addEventListener('load', function(){
+        setTimeout(scrollTo, 0, 0, 1); 
+    }, false);
+    } 
+    catch(e) {}
+    // ]]>
+ </script>
+</head>
+<body>
+  <? include "./mobile_header.html"?>
+<div class="main">
+    <h3>경영정보</h3>
+  </div>
+  <div class="subnav swiper-container">
+    <ul  class="swiper-wrapper">
+      <li class="swiper-slide"><a href="./sub4_1.html">재무정보</a></li>
+      <li class="current swiper-slide"><a href="./sub4_2.html">주가정보</a></li>
+      <li class="swiper-slide"><a href="./sub4_3.html">공시정보</a></li>
+      <li class="swiper-slide"><a href="./sub4_4.html">투자정보</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>홈</span>
+        &gt;
+        <span>경영정보</span>
+        &gt;
+        <strong>주가정보</strong>
+      </div>
+      <h2>주가정보</h2>  
+      <p>항상 노력하는 투명한 기업, 코오롱글로벌은
+        언제나 정확하고 확실한 정보를 제공하겠습니다.</p>
+    </div>
+    <div class="content_area">
+        <div class="tbl_wap">
+        <table>
+          <colgroup>
+          <col style="width:25%">
+          <col>
+          </colgroup>
+            <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">2017</th>
+                <th scope="col">2018</th>
+                <th scope="col">2019</th>
+                <th scope="col">2020</th>
+                <th scope="col">2021</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>기말주가</th>
+                <td>9,780</td>
+                <td>7,130</td>
+                <td>9,760</td>
+                <td>19,300</td>
+                <td>22,600</td>
+            </tr>
+            <tr>
+                <th>기본주당순이익(EPS)</th>
+                <td>601.0</td>
+                <td>639.0</td>
+                <td>1411.0</td>
+                <td>3238.0</td>
+                <td>6223.0</td>
+            </tr>
+            <tr>
+                <th>주가수익율(PER)</th>
+                <td>1.56</td>
+                <td>11.15</td>
+                <td>6.87</td>
+                <td>5.96</td>
+                <td>3.14</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>단위:원</p>
+    </div>
+        <div class="link">
+          <a href="#" target="_blank" title="주가정보가 새창에서열림">실시간 주가정보</a>
+          </div>
+   </div>
+  </article>
+  <? include "./mobile_footer.html"?>
+  <script src="./js/sub_menu.js"></script>
+</body>
+</html>
+

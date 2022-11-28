@@ -1,0 +1,26 @@
+
+#content .summary { text-align: start; margin: 0 auto; width: 1800px; white-space: pre-line; position:relative } 
+#content .summary img { width: 1800px; } 
+#content .summary div { position: absolute; z-index: 2; top:100px; left:500px; opacity: 0;} 
+#content .summary span { font-size: 4em; font-weight: 700; color:#1b4aa0; display: block; position: relative; margin-left: 30px; } 
+#content .summary span::before { content: ''; width:10px; height: 55px; background:#1b4aa0; position: absolute; display: block; left: -30px; top:25%; transform: scale(1); transform-origin: 0 0; } 
+#content .summary p:nth-of-type(1) { font-size: 1.875em; font-weight: 500; } 
+#content .summary p:nth-of-type(2) { line-height: 2em; } 
+#content .content01 { margin-bottom: 200px; } 
+#content .content01 li { display: flex; opacity: 0; justify-content: space-between; flex-wrap: wrap; width: 1200px; margin: 100px auto 0; text-align: start; } 
+#content .content01 li>p { white-space: pre-line; margin: 50px auto 0 30px; position: relative; line-height: 2em; font-size: 1.25em; } 
+#content .content01 li>p::before { content: ''; width: 10px; height: 10px; background: #1b4aa0; display: block; position: absolute; top:15px; left: -30px; border-radius: 50%; } 
+#content .content01 img { border-radius: 30px; } 
+#content .item_left { width: 800px; } 
+#content .item_left>p { font-size: 2.25em; font-weight: 700; color:#1b4aa0; position:relative; margin: 30px; } 
+#content .item_left>p::before { content: ''; display: block; position: absolute; width: 10px; height: 45px; left: -30px; top:10%; background: #1b4aa0; } 
+#content .inner_text { margin-left: 30px; display: flex; flex-wrap: wrap; } 
+#content .inner_text p { width:350px; margin:0 30px 10px 0; } 
+#content .inner_text span { font-weight: 500; display: inline-block; margin-right: 10px; } 
+#content .item_right { width: 370px; } 
+#content .item_right img:nth-of-type(1) { margin-bottom: 30px; } 
+
+#content .summary.moved div{animation: up 1s ease forwards;}
+#content .content01 li.moved {animation: up 1s ease forwards;}
+#content .content01 li.moved .item_left{animation: left_on 1s ease forwards;}
+#content .content01 li.moved .item_right{animation: right_on 1s ease forwards;}

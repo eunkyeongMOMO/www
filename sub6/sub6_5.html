@@ -1,0 +1,97 @@
+<?
+           session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코오롱글로벌</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="./common/sub_6common.css" />
+    <link rel="stylesheet" href="./css/sub6_5content.css" />
+
+    <script
+      src="https://kit.fontawesome.com/969baeb221.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html"?>
+      <div class="visual">
+        <img
+          src="./images/sub_visual06.jpg"
+           alt="서브 비주얼 이미지 - 인재채용"
+        />
+        <h3>인재채용</h3>
+      </div>
+      <div class="subnav">
+        <ul>
+          <li><a href="./sub6_1.html">인재상</a></li>
+          <li><a href="./sub6_2.html">직무소개</a></li>
+          <li><a href="./sub6_3.html">교육제도</a></li>
+          <li><a href="./sub6_4.html">채용FAQ</a></li>
+          <li class="current"><a href="./sub6_5.html">채용문의</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="title_area">
+          <div class="line_map">
+            <span>홈</span>
+            &gt;
+            <span>인재채용</span>
+            &gt;
+            <strong>채용문의</strong>
+          </div>
+          <h2>채용문의</h2>
+        </div>
+        <div class="content_area">
+          <div class="summary">
+            <span>One&Only</span>
+            <p>코오롱 글로벌 채용관련 문의</p>
+            <p>궁금하신점을 남겨주시면 접수 순서대로 답변드리겠습니다.</p>
+          </div>
+          <div id="mailAddress">
+            <form action="mail.php" method="post">
+               <ul>
+                <li>
+                  <dl>
+                    <dt><label for="uname">이름</label></dt>
+                    <dd><input type="text" id="uname" name="uname" placeholder="이름을 입력해주세요." required deta></dd>
+                  </dl>
+                  </li>
+                <li>
+                  <dl>
+                    <dt><label for="email">이메일</label></dt>
+                    <dd><input type="text" id="email" name="email" placeholder="답변 받을 이메일을 입력해주세요." required></dd>
+                  </dl>
+                  </li>
+                <li>
+                  <dl>
+                    <dt><label for="phone">전화번호</label></dt>
+                    <dd><input type="text" id="phone" name="phone" placeholder="연락받으실 번호를 입력해주세요." required></dd>
+                  </dl>
+                  </li>
+                <li>
+                  <dl>
+                    <dt><label for="message">문의사항</label></dt>
+                    <dd><textarea name="message"  placeholder="문의사항을 입력해주세요." rows="15" required></textarea></dd>
+                  </dl>
+                  </li>
+                <li><input type="submit" value="문의사항 전송하기" class="submitBtn"></li>
+              </ul>
+            </form>
+    </div>
+        </div>
+      </article>
+      <? include "../common/sub_footer.html"?>
+      <script src="./js/sub6-4.js"></script>
+  </body>
+</html>

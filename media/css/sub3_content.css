@@ -1,0 +1,76 @@
+#content .contents{}
+#content .contents>li:nth-of-type(even) a{order: -1;margin-top: 50px;}
+#content .contents .content_top{display: flex; 
+    justify-content: space-between; align-items: center;}
+#content .contents .info{width: 55%; padding: 50px 0;}
+#content .contents .info p:nth-of-type(1){font-size: 1.75rem; font-weight: 700; margin-bottom: 20px; line-height: 2.5rem;}
+#content .contents .info p:nth-of-type(2){line-height: 2rem;}
+#content .contents .content_top a{display: block; width: 40%; position: relative;}
+#content .contents .content_top a:hover .playBnt i{color: hsl(263, 100%, 77%);}
+#content .contents .content_top img{width: 100%; border-radius: 50px;}
+#content .contents .content_top i{position: absolute; transform: translate(-50%,-50%);
+    left: 50%; top:50%; font-size: 3rem; z-index: 2; transition: all .5s ease;}
+#content .contents .still_cut{display: flex; justify-content: space-between; 
+    align-items: center; margin: 50px auto;}
+#content .contents .still_cut li{width: 24%; position: relative;}
+
+@keyframes flash {
+	0% {opacity: .4;}
+	100% {opacity: 1;}
+}
+#content .contents .still_cut li:hover img{animation: flash 1.5s; transform: translateY(-10px);}
+#content .contents .still_cut li img{width: 100%; transition: all .5s ease; }
+#content .contents .still_cut .inner_text{position: absolute; left: 15px; bottom: 15px; text-align: start;}
+#content .contents .still_cut .inner_text span{font-size: 1.25rem; display: block; font-weight: 700;margin-bottom: 10px;}
+#content .contents .still_cut .inner_text p{font-weight: 400;}
+#content .video{padding-bottom: 150px; padding: 20px 0 150px;}
+#content .video ul{position: relative; width: 90%; display: flex; left: 0;
+   justify-content: space-between; align-items: center; flex-wrap: wrap; margin: 0 auto;}
+#content .video li{width: 32.33%; margin-right: 1%; transition: all .5s ease; margin-bottom: 20px;position: relative;}
+#content .video li:hover{background: rgba(186, 146, 255, 0.5);}
+#content .video li:hover .playBnt i{color: hsl(263, 100%, 77%);}
+#content .video a{position: relative; display: block;}
+#content .video a img{width: 100%;}
+#content .video a i{font-size: 3rem; position: absolute; left: 50%; top:50%; transition: all .5s ease;
+    transform: translate(-50%,-50%); text-shadow: 3px 3px 7px rgba(187, 210, 255, 0.3);}
+#content .video p{ font-family: aespa; font-size: 1.25rem; text-align: center; margin: 15px auto;}
+
+#content .contents .content_top .close_btn{ width: 40px; position: absolute; right: 0; top:-50px; transition: all .5s ease; transform: rotate(0);}
+#content .contents .content_top .close_btn:hover{transform: rotate(360deg);}
+#content .video .close_btn{ width: 40px; position: absolute; right: 0; top:-50px; transition: all .5s ease; transform: rotate(0);}
+
+#content .video .close_btn:hover{transform: rotate(360deg);}
+
+
+ /* 테블릿 */
+ @media screen and (max-width:1024px) {
+    #content .contents .info p:nth-of-type(1){font-size: 1.25rem;}
+    #content .contents .info p:nth-of-type(2){line-height: 2rem;}
+    #content .contents .content_top img{border-radius:15px;}
+    #content .contents .still_cut .inner_text span{font-size: 1rem;}
+    #content .contents .still_cut .inner_text p{ font-size: .75rem;}
+    #content .video{padding-bottom: 100px;}
+    #content .video ul{width: auto;}
+    #content .video .content_top>a>i{font-size: 2.5rem;}
+    #content .video p{font-size: 1rem;}
+     #content .video .close_btn{ width: 30px; top:-25px}
+  }
+
+/* 모바일 */
+  @media screen and (max-width:640px) {
+    #content section h3{font-size: 2rem; margin: 20px auto;} 
+    #content .contents>li:nth-of-type(even) a{order: 2;margin-top: 20px;}
+    #content .contents .content_top{display: block; margin-top: 20px;}
+    #content .contents .info{width: 90%; padding: 0; margin: 0 auto; text-align: center;}
+    #content .contents .content_top a{width: 90%; margin: 0 auto;}
+    #content .contents .content_top img{border-radius: 15px;}
+    #content .contents{margin-bottom: 20px;}
+    #content .contents .still_cut{flex-wrap: wrap; width: 90%; margin: 30px auto 20px;}
+    #content .contents .still_cut li{width: 49%; margin-bottom: 15px;}
+    #content .contents .still_cut li img{width: 100%;}
+    #content .video {padding: 0 0 100px;}
+    #content .video li{width: 49%;} 
+    #content .video .close_btn{ width: 25px; top:-30px;}
+    #content .contents .content_top .close_btn{ width: 25px;top:-30px;}
+    
+  }   

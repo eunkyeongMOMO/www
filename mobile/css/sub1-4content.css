@@ -1,0 +1,32 @@
+.main{background: url(../images/sub1/sub1_visual.jpg) center no-repeat;  background-size: cover;}
+/* .subnav ul{left: -250px;} */
+#content #map{width: 100%; height: 250px; margin-top: 30px;}
+#content .map_info{width: 90%; margin: 20px auto; text-align: start;} 
+#content .map_info dt{font-size: 1.571rem; font-weight: 700;
+    margin-bottom: 20px; color: #3678fe;}  
+#content .map_info dd{margin-bottom: 10px;} 
+#content .map_info dd:nth-last-child(1){margin-bottom: 20px;} 
+#content .map_info dd span{color: #777; display: inline-block; margin-left: 10px;} 
+#content .map_info a{display: flex; justify-content: center; align-items: center;
+    color:#3678fe; border:1px solid #3678fe; border-radius: 30px; width: 100%; height: 40px; margin-bottom: 10px; } 
+#content .roadmap{margin: 30px auto;}
+#content .roadmap div{width: 100px; height: 100px;margin: 30px auto; display: flex; justify-content: center; align-items: center;
+     border: 1px solid #3678fe; border-radius: 50%;}
+#content .road_bus img{width: 65px;}
+#content .road_subway img{width: 50px;}
+
+#content .roadmap dl {width: 90%; margin: 10px auto; overflow: hidden;} 
+#content .roadmap dt { font-weight: 500; float: left; display: flex; justify-content: center; align-items: center;
+   width: 20%; height: 30px; color: #fff; border-radius: 15px}
+#content .roadmap dd { width: 77%; margin-left: 3%; text-align: start; float: right;} 
+#content .roadmap dd>span {display: block; margin-bottom: 5px; font-weight: 700;} 
+#content .road_bus { margin-bottom: 30px; } 
+#content .road_bus dt {background-color: #e2071c; } 
+#content .road_bus dl:nth-of-type(1) dt { background-color: #1d18e9; } 
+#content .road_bus span:nth-of-type(1) { font-weight: 700; } 
+#content .road_bus p { color:#666; } 
+#content .road_bus span:nth-of-type(2) { color:#999; display: block; } 
+#content .road_subway dl:nth-of-type(1) { margin-top: 20px; } 
+#content .road_subway dt { background-color: #57a5f3;}
+#content .road_subway p span { color: #57a5f3; } 
+

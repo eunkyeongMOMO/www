@@ -1,0 +1,5 @@
+.main{background: url(../images/sub4/sub4_visual.jpg) center no-repeat; background-size: cover;}
+/* .subnav ul{left: -250px;} */
+#content .content_area{background: url(../images/sub4/investment_bg.svg) center no-repeat; background-size: 100%;}
+#content .summary span{font-size: 1.2rem; font-weight: 700; color:#3678fe; margin: 15px auto;}
+#content .summary p{line-height: 1.7rem; margin: 20px auto; }

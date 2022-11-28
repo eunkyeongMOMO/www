@@ -1,0 +1,38 @@
+#content .summary { opacity: 0; } 
+#content .summary p { font-size: 1.5em; line-height: 2em; white-space: pre-line; } 
+#content .summary span { color:#1b4aa0 } 
+#content .safety04 ul { margin: 100px auto; width:1122px; height:297px; background: url(../images/content4/sytem_bg.png); position: relative; } 
+#content .safety04 li { width: 230px; height: 230px; border:2px solid rgba(255,255,255,0.0); background: #fff; border-radius: 170px; box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1); position: absolute; top:50%; transform: translateY(-50%); opacity: 0; } 
+#content .safety04 li:nth-of-type(1) { left: 25px; } 
+#content .safety04 li:nth-of-type(2) { left: 305px; } 
+#content .safety04 li:nth-of-type(3) { right: 305px; } 
+#content .safety04 li:nth-of-type(4) { right:25px; } 
+#content .safety04 li:hover { border: 2px solid #1b4aa0; box-shadow: none; } 
+#content .safety04 span,
+.safety04_list div span { margin-top:50px; font-size: 1.5em; color:#1b4aa0; display: block; } 
+#content .safety04 span::after, 
+.safety04_list div span::after { content: '안전보건'; font-size: .75em; color: #999; margin-top: 5px; display: block; } 
+#content .safety04 p,.safety04_list div p { font-size: 1.75em; font-weight: 700; color:#1b4aa0; margin-top: 20px; } 
+
+#content .safety04_list ul { width: 1300px; margin: 0 auto 150px; padding: 50px; overflow: hidden; } 
+#content .safety04_list li { width: 800px; height: 200px; box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.1); background: #fff; margin-bottom: 50px; display: flex; justify-content: space-between; opacity: 0; } 
+
+#content .safety04_list li:nth-of-type(odd) { float:left; } 
+#content .safety04_list li:nth-of-type(even) { float:right; } 
+#content .safety04_list li:nth-of-type(4) .list_text { padding-left: 20px; } 
+#content .safety04_list div:nth-of-type(1) { width: 200px; } 
+#content .safety04_list div:nth-of-type(1) span { margin-top: 30px; } 
+#content .list_text { width: 600px; text-align: start; } 
+
+#content .list_text p:nth-of-type(1) { margin-top: 50px; color: #333; font-size: 1.25em; } 
+#content .list_text p:nth-of-type(2) { color:#666; font-size: 1em; white-space: pre-line; } 
+@keyframes up2 { 
+ 0% { opacity: 0; transform: translateY(250px); } 
+ 100% { opacity: 1; transform: translateY(-50%); } 
+ }
+#content .summary.moved { animation: up .7s ease forwards; } 
+#content .safety04 li.moved { animation: up2 .7s ease forwards; } 
+#content .safety04 li.moved:nth-of-type(2) { animation-delay: .3s; } 
+#content .safety04 li.moved:nth-of-type(3) { animation-delay: .6s; } 
+#content .safety04 li.moved:nth-of-type(4) { animation-delay: .9s; } 
+#content .safety04_list li.moved { animation:up 1s ease forwards; } 

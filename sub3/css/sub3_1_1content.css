@@ -1,0 +1,61 @@
+#content .summary { width: 1200px; margin: 0 auto; position: relative; } 
+#content .content_area >img { width: 2000px; margin: 0 auto; } 
+#content h3 { color:#1b4aa0; font-weight: 700; font-family:'Roboto', sans-serif; position: absolute; font-size: 5em; top: -130px; right: 0; z-index: 2; } 
+#content .summary span { font-size: 2.5em; font-weight: 700; display: block; margin: 80px 0 50px 0; text-align: end; }
+#content .summary p { white-space: pre-line; text-align: end; font-size: 1.25em; line-height: 1.75em; margin-bottom: 120px; } 
+#content .motors_con01 { width: 1200px; margin: 100px auto; } 
+#content .motors_con01 .all { display: block; position: relative; left: 50%; margin:50px 0 50px 350px; width: 200px; overflow: hidden; padding:20px; border:1px solid #1b4aa0; transition: all .5s ease-in-out; } 
+#content .motors_con01 .all:hover { background: #1b4aa0; color: #fff; } 
+#content .motors_con01 li { overflow: hidden; padding: 50px; } 
+#content .motors_con01 a { font-size: 1.25em; font-weight: 500; color:#333; position: relative; display: inline-block; background: #fff; margin-left: -800px; } 
+#content .motors_con01 a:hover { color: #1b4aa0; } 
+#content .motors_con01 a:hover::after { border: 1px solid #1b4aa0; } 
+#content .motors_con01 a::after { content:''; display: block; position: absolute; top:-40%; right: 20%; border: 1px solid #333; width: 150px; height: 50px; z-index: -1; } 
+#content .motors_con01 .shop_details { display: none; } 
+#content .motors_con01 dl { width: 500px; height: 300px; position: relative; box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.1); margin-top: 50px; text-align: start; padding: 50px 20px 50px 30px; } 
+#content .motors_con01 dl:nth-of-type(odd) { float: left; } 
+#content .motors_con01 dl:nth-of-type(even) { float: right; } 
+#content .motors_con01 dt { font-size: 1.25em; color: #1b4aa0; font-weight: 700; margin-bottom: 20px; } 
+#content .motors_con01 dd { white-space: pre-line; } 
+#content .motors_con01 dd:nth-of-type(1) { margin-bottom: 10px; } 
+#content .motors_con01 dd:nth-of-type(2) { font-size: .75em; color:#666; } 
+#content .motors_con01 dd:nth-of-type(2)>span { font-weight: 500; color:#333; display: block; margin-bottom: 5px; } 
+#content .motors_con01 .outline span { position: absolute; background: #1b4aa0; } 
+#content .motors_con01 .outline span:nth-child(1) { left: 0; top: 0; width: 0; height: 1px; transition: width 0.1s; } 
+#content .motors_con01 .outline span:nth-child(2) { right: 0; top: 0; width: 1px; height: 0; transition: height 0.1s linear 0.1s; } 
+#content .motors_con01 .outline span:nth-child(3) { right: 0; bottom: 0; width: 0; height: 1px; transition: width 0.1s linear 0.2s; } 
+#content .motors_con01 .outline span:nth-child(4) { left: 0; bottom: 0; width: 1px; height: 0; transition: height 0.1s linear 0.3s; } 
+dl:hover .outline span:nth-child(1) { width: 100%; } 
+dl:hover .outline span:nth-child(2) { height: 100%; } 
+dl:hover .outline span:nth-child(3) { width: 100%; } 
+dl:hover .outline span:nth-child(4) { height: 100%; } 
+#content .motors_con02 { width: 2000px; margin: 0 auto 200px; position: relative; } 
+#content .motors_con02 .model_info { position: relative; padding-top: 50px; width: 2000px; display: flex; } 
+#content .motors_con02 .motors_list { position:relative; left: 0; width: 4000px; display: flex; justify-content: center; } 
+#content .motors_con02 li { width: 300px; height: 300px; margin: 50px; background:#fff; box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1); text-align: center; } 
+#content .motors_con02 li img { width: 200px; margin-bottom: 10px; } 
+#content .motors_con02 li>span { font-size:.75em; color: #666; } 
+#content .motors_con02 li p { font-size: 1.2em; color: #1b4aa0; margin: 5px auto 30px; } 
+#content .motors_con02 li a { display: block; width: 200px; height: 40px; border-radius: 20px; border: 1px solid #1b4aa0; margin: 0 auto; position: relative; color: #1b4aa0; } 
+#content .motors_con02 li a::before { content: ""; width: 30px; height: 1px; background: #1b4aa0; display: block; position: absolute; left: 30px; top: 20px; transform-origin: 0 0; transform: scale(0); transition: all 0.5s ease-out; } 
+#content .motors_con02 li a span { position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%); transition: all .5s ease-out; } 
+#content .motors_con02 li a:hover::before { background: #fff; transform: scale(1); } 
+#content .motors_con02 li a:hover { background: #1b4aa0; } 
+#content .motors_con02 li a:hover span { color: #fff; left: 60%; transform: translate(-50%,-50%) } 
+#content .left, .right { color:#fff; display:block; text-shadow: 3px 3px 5px rgba(0,0,0,0.2); font-size: 4em; position: absolute; transform: translate(-50%,-50%); transition: all .5s ease-out; z-index: 3; bottom: 25%; left: 50%; } 
+#content .left { margin-left: -200px } 
+#content .right { margin-left: 200px; } 
+#content .left:hover, .right:hover { color: #1b4aa0; } 
+#content .motors_popup { background: #fff; box-shadow: 3px 3px 15px 8px rgba(0,0,0,0.2); position: absolute; z-index: 110; top:30%; left: 50%; width: 800px; height: 800px; transform: translate(-50%,-50%); padding:0 30px 30px 30px; display: none; } 
+#content .motors_popup strong { font-size: 2em; color:#1b4aa0; text-align: start; font-weight: 700; display: block; margin: 0 0 20px 20px; } 
+#content .motors_popup img:nth-of-type(1) { width: 500px; margin: 0 auto 30px; } 
+#content .motors_popup .info1 { width: 700px; margin: 0 auto; display: flex; flex-wrap: wrap; } 
+#content .motors_popup .info1 dt { width: 300px; padding: 5px 10px; background: rgba(68, 103, 255, 0.2); font-weight: 500; text-align: start; } 
+#content .motors_popup .info1 dd { width: 400px; text-align: end; padding: 5px 10px; border: 1px solid rgba(68, 103, 255, 0.466); } 
+#content .motors_popup p { font-size: 1.5em; text-align: start; margin: 10px 20px; } 
+#content .motors_popup .info2 { width: 600px; margin: 10px auto; display: flex; flex-wrap: wrap; } 
+#content .motors_popup .info2 dt { width: 200px; margin-bottom: 10px; } 
+#content .motors_popup .info2 dd { position: relative; width: 400px; margin-bottom: 10px; } 
+#content .motors_popup .info2 dd::after { content:''; display: block; position: absolute; width: 600px; height: 1px; background: #999; bottom: -5px; left: -200px; } 
+#content .motors_popup a { display: block; padding: 10px; border: 1px solid #1b4aa0; color: #1b4aa0; position: relative; left: 60%; bottom: 20px; margin: 50px; width: 200px; transition: all .5s ease-out; } 
+#content .motors_popup a:hover { background: #1b4aa0; color: #fff; } 

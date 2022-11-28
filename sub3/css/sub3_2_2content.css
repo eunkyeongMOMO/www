@@ -1,0 +1,37 @@
+#content .content_area .main_img{opacity: 0;}
+#content .summary {text-align: start; width: 1200px; margin: 0 auto;}
+#content .summary span{
+    color:#1b4aa0; font-weight: 700;font-family:'Roboto', sans-serif;
+    font-size: 5em;
+    display: block;margin:50px 0;}
+#content .summary p{white-space: pre-line; font-size: 1.5em; 
+    line-height: 2em;}
+#content img:nth-of-type(2){width:1200px; margin:50px auto}
+#content .summary2{opacity: 0;}
+#content .summary2 span{font-size: 2em; font-weight: 700; color:#1b4aa0}
+#content .summary2 p{white-space:pre-line; font-size: 1.25em; line-height: 2em;margin:50px auto 100px}
+#content .info{display: flex; width: 1200px; justify-content: space-between; margin:0 auto;}
+#content .info img{transform: translateY(0); transition: all .5s ease-out;}
+#content .info li{opacity: 0;}
+#content .info li:hover img{transform: translateY(-20px);}
+#content .info span{display: block; margin: 10px auto 200px; color: #666; transition: all .5s ease-out;}
+#content .info li:hover span{color:#1b4aa0; font-weight: 700;}
+#content .chemical_con01{opacity: 0;}
+#content .chemical_con01 p{font-size: 1.25em; line-height: 2em; white-space: pre-line; margin: 50px auto 100px}
+#content .item>p{font-size: 2em; font-weight: 700; margin: 0 auto 50px}
+#content .item ul{width: 1200px; margin: 0 auto 200px; display: flex; justify-content: space-between;flex-wrap: wrap;}
+#content .item li{position: relative;margin-bottom: 80px; opacity: 0;}
+#content .item li:hover p{background: rgba(0,0,0,0.5); color: #fff;}
+#content .item li img{width: 350px; border-radius: 50px;}
+#content .item li p{width:350px; height: 350px; background: rgba(0,0,0,0.1); border-radius: 50px; 
+        position:absolute; left:0; top:-50px; z-index: 2; padding-top: 150px; color:#eee;transition:all .5s ease-out}
+#content .main_img.moved{animation: up 1s ease forwards;}
+#content .summary.moved{animation: up 1s ease forwards;}
+#content .summary2.moved{animation: up 1s ease forwards;}
+#content .info li.moved{animation: up 1s ease forwards;}
+#content .info li.moved:nth-of-type(2){animation-delay: .3s;}
+#content .info li.moved:nth-of-type(3){animation-delay: .6s;}
+#content .chemical_con01.moved{animation: up .7s ease forwards;}
+#content .chemical_con01 .item li.moved{animation: up .7s ease forwards;}
+#content .chemical_con01 .item li.moved:nth-of-type(3n-1){animation-delay: .2s;}
+#content .chemical_con01 .item li.moved:nth-of-type(3n){animation-delay: .4s;}

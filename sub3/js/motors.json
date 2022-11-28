@@ -1,0 +1,12 @@
+{"motors_info":[ {"title":"BMW THE1", "price":"￦ 40,000,000", "engine":"가솔린 , 디젤","output":"약 150 마력 / 약 306 마력", 
+    "weight":"1,490KG", "high_output":"184/5,000","level":"11.0KM/L (4)","co2":"154g/KM"},
+    {"title":"THE2 GRAN COUPE", "price":"￦ 43,800,000", "engine":"가솔린 , 디젤","output":"약 150 마력 / 약 306 마력", 
+    "weight":"1,545KG", "high_output":"150/4,000","level":"14.3KM/L (2)","co2":"132g/KM"},
+    {"title":"THE3 TOURING", "price":"￦ 59,600,000", "engine":"가솔린 , 디젤","output":"약 184 마력 / 약 387 마력", 
+    "weight":"1,655 K"," high_output":"184/5,000","level":"11.7 KM/L (3)","co2":"143g/KM"},
+    {"title":"THE4 CONVERTIBLE", "price":"￦ 67,800,000", "engine":"가솔린","output":"약 184 마력 / 약 190 마력", 
+    "weight":"1,740KG", "high_output":"184/5,000","level":"11.4KM/L (4)","co2":"149g/KM"},
+    {"title":"THE5 SEDAN", "price":"￦ 66,000,000", "engine":"가솔린 , 디젤 , 플러그인 하이브리드","output":"약 184 마력 / 약 530 마력", 
+    "weight":"1,670KG", "high_output":"184/5,000","level":"12.4KM/L (3)","co2":"135g/KM"},
+    {"title":"THE6 GRAN TURISMO", "price":"￦ 83,000,000", "engine":"가솔린 , 디젤","output":"약 190 마력 / 약 340 마력", 
+    "weight":"1,920KG", "high_output":"190/4,000","level":"13.5KM/L (3)","co2":"140g/KM"}]}

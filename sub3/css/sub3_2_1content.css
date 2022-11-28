@@ -1,0 +1,41 @@
+#content img:nth-of-type(1) { width:2000px; margin: 0 auto 50px; } 
+#content .summary { text-align: start; width: 1200px; margin: 0 auto; opacity: 0;} 
+#content .summary span { color:#1b4aa0; font-weight: 700; font-family:'Roboto', sans-serif; font-size: 5em; display: block; } 
+#content .summary p { white-space: pre-line; font-size: 1.5em; line-height: 2em; } 
+#content .main_img{opacity: 0;}
+#content .summary2 { text-align: end; margin: 100px auto; width: 1200px; opacity: 0;} 
+#content .summary2 span { font-size: 2.5em; color: #1b4aa0; display: block; font-weight: 700; } 
+#content .summary2 p { white-space: pre-line; line-height: 2em; } 
+
+#content .chemical_con01>p { white-space: pre-line; font-size: 1.25em; margin-top: 50px; } 
+#content .chemical_icon { display: flex; justify-content: space-between;width: 1200px; margin: 100px auto; align-items: center; } 
+#content .chemical_icon li { width: 200px; height: 200px; opacity: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; } 
+#content .chemical_icon img { width: 120px; } 
+#content .chemical_icon span { display: block; } 
+
+#content .chemical_item { margin-bottom: 150px; } 
+#content .chemical_item li { overflow: hidden; width: 1200px; opacity: 0; margin: 0 auto; padding:50px; position: relative;; } 
+#content .chemical_item li:nth-of-type(odd) div { float: left; } 
+#content .chemical_item li:nth-of-type(even) div { float: right; } 
+#content .chemical_item img { width: 500px; transition: all .5s ease-out; } 
+#content .chemical_item li:hover img { border-radius: 50px; } 
+#content .chemical_item li:nth-of-type(odd)img { margin-right: 50px; } 
+#content .chemical_item li:nth-of-type(even)img { margin-left: 50px; } 
+#content .chemical_item div { text-align: start; width: 550px; padding: 50px; } 
+#content .chemical_item p { white-space: pre-line; } 
+#content .chemical_item p:nth-of-type(1) { font-size: 1.875em; font-weight: 700; color: #1b4aa0; margin-bottom:30px; position: relative; } 
+#content .chemical_item p:nth-of-type(1)::after { content:''; display: block; width: 0; height: 1px; background: #1b4aa0; position: absolute; left:0; bottom: -10px; transition: all .5s ease-out; } 
+#content .chemical_item li:hover p:nth-of-type(1)::after { width: 400px; } 
+#content .chemical_item p:nth-of-type(2) { line-height: 2em; margin-bottom: 20px; } 
+#content .chemical_item span { font-weight: 500; display: block; margin-bottom: 10px; } 
+#content .chemical_item p:nth-of-type(3) { font-size: .75em; } 
+
+
+#content .summary.moved,#content .main_img.moved,#content .summary2.moved, #content .chemical_icon.moved li{animation: up 1s ease forwards}
+#content .chemical_icon.moved li:nth-of-type(2){animation-delay: .3s;}
+#content .chemical_icon.moved li:nth-of-type(3){animation-delay: .6s;}
+#content .chemical_icon.moved li:nth-of-type(4){animation-delay: .9s;}
+#content .chemical_icon.moved li:nth-of-type(5){animation-delay: 1.2s;}
+#content .chemical_icon.moved li:nth-of-type(6){animation-delay: 1.5s;}
+#content .chemical_item li.moved:nth-of-type(odd){animation: left_on 1s ease forwards;}
+#content .chemical_item li.moved:nth-of-type(even){animation: right_on 1s ease forwards;}

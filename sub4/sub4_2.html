@@ -1,0 +1,136 @@
+<?
+           session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코오롱글로벌</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+
+    <link rel="stylesheet" href="./css/Nwagon.css">
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="./common/sub_4common.css" />
+    <link rel="stylesheet" href="./css/sub4_2content.css" />
+
+    <script
+      src="https://kit.fontawesome.com/969baeb221.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="./js/Nwagon.js"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html"?>
+      <div class="visual">
+        <img
+          src="./images/sub_visual04.jpg"
+           alt="서브 비주얼 이미지 - 경영정보"
+        />
+        <h3>경영정보</h3>
+      </div>
+      <div class="subnav">
+        <ul>
+          <li><a href="./sub4_1.html">재무정보</a></li>
+          <li class="current"><a href="./sub4_2.html">주가정보</a></li>
+          <li><a href="./sub4_3.html">공시정보</a></li>
+          <li><a href="./sub4_4.html">투자정보</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="title_area">
+          <div class="line_map">
+            <span>홈</span>
+            &gt;
+            <span>경영정보</span>
+            &gt;
+            <strong>주가정보</strong>
+          </div>
+          <h2>주가정보</h2>
+        </div>
+        <div class="content_area">
+      
+        <div class="investment01"></div>
+        <div id="chart18"></div>
+        <script>
+          var options = {
+            'legend':{
+              names: ['2017', '2018', '2019', '2020', '2021']},
+            'dataset':{
+              values: [[97.80,60.1,156], [71.30,63.9,111.5], [97.60,141.1,687], [193.00,323.8,596], [226.00,622.3,314]],
+              colorset: ['#2a70f9','#0f57d8',"#0040B5"],
+              fields:['기말주가', '기본주당순이익(EPS)', '주가수익율(PER)']},
+            'chartDiv' : 'chart18',
+            'chartType' : 'multi_column',
+            'chartSize' : {width:1200, height:700},
+            'maxValue' : 700,
+            'increment' : 100
+          };
+      
+          Nwagon.chart(options);
+      
+        </script>
+       </div>
+      <div class="tbl_wap">
+        <table>
+          <colgroup>
+          <col style="width: 25%">
+          <col style="width:25%">
+          <col>
+          </colgroup>
+            <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">2017</th>
+                <th scope="col">2018</th>
+                <th scope="col">2019</th>
+                <th scope="col">2020</th>
+                <th scope="col">2021</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>기말주가</th>
+                <td>9,780</td>
+                <td>7,130</td>
+                <td>9,760</td>
+                <td>19,300</td>
+                <td>22,600</td>
+            </tr>
+            <tr>
+                <th>기본주당순이익(EPS)</th>
+                <td>601.0</td>
+                <td>639.0</td>
+                <td>1411.0</td>
+                <td>3238.0</td>
+                <td>6223.0</td>
+            </tr>
+            <tr>
+                <th>주가수익율(PER)</th>
+                <td>1.56</td>
+                <td>11.15</td>
+                <td>6.87</td>
+                <td>5.96</td>
+                <td>3.14</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>단위:원</p>
+    </div>
+    <div class="link">
+      <img src="./images/content2/investment01.jpg" alt="">
+        <p>항상 노력하는 투명한 기업, 코오롱글로벌은
+          언제나 정확하고 확실한 정보를 제공하겠습니다.</p>
+        <a href="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=003070" target="_blank" title="주가정보가 새창에서열림">실시간 주가정보</a>
+</div>
+      </article>
+      <? include "../common/sub_footer.html"?>
+      <script src="./js/sub4_2.js"></script>
+  </body>
+</html>

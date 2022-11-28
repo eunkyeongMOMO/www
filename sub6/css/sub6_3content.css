@@ -1,0 +1,19 @@
+#content section h3 { top:50px } 
+#content .education { opacity: 0; width: 1200px; height:600px; margin: 50px auto; background: url(../images/content3/edu_img.jpg); text-indent: -9999px; overflow: hidden; } 
+#content .info { opacity: 0; width: 1200px; margin: 0 auto 100px; } 
+#content .info li { display: flex; justify-content: center; align-items: center; margin-bottom: 50px; } 
+#content .info span { font-size: 1.5em; font-weight: 500; color:#1b4aa0; border: 1px solid #1b4aa0; padding: 20px 30px;; display: block; margin: 0 100px 0 50px; } 
+#content .info p { white-space: pre-line; text-align: start; width: 650px; line-height: 2em; } 
+
+#content .leader { width: 1200px; margin: 100px auto 200px; } 
+#content .leader>p { white-space: pre-line; font-size: 1.25em; text-align: center; line-height: 2em; margin: 50px 0 100px; } 
+#content .leader>p strong { color:#1b4aa0 } 
+#content .leader li { opacity: 0; width:1200px; text-align: start; display: flex; justify-content: center; padding: 50px; margin-bottom: 50px; } 
+#content .leader img { width:130px; margin-right: 100px; } 
+#content .leader span { display: block; color: #666; font-size:1.875em; font-weight: 700; margin-bottom: 30px; position: relative; transition: all .5s ease-out; } 
+#content .leader span::after { content:''; display: block; width: 500px; height: 1px; background: #666;position: absolute; bottom: -10px; } 
+#content .leader li p { white-space: pre-line; line-height: 2em; } 
+#content .leader li:hover span { color: #1b4aa0; } 
+#content .leader li:hover span::after { background: #1b4aa0; } 
+
+#content .education.moved,#content .info.moved,#content .leader li.moved{animation: up 1s ease forwards;}

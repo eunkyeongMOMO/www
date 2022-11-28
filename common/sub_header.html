@@ -1,0 +1,103 @@
+<!-- 헤더 공통 요소 -->
+<div id="skipNav">
+    <a href="#content">본문바로가기</a>
+    <a href="#gnb">글로벌네비게이션바로가기</a>
+  </div>
+  <div class="wrap">
+    <header id="headerArea">
+      <div class="header_inner">
+        <h1><a href="../index.html">코오롱글로벌로고</a></h1>
+        <?
+
+        @extract($_GET); 
+        @extract($_POST); 
+        @extract($_SESSION); 
+        //$userid = $_SESSION['userid']
+            if(!$userid)
+          {
+        ?>
+        <ul class="login">
+          <li>
+            <a href="../login/login_form.php">LOGIN</a>
+          </li>
+          <li>
+            <a href="../member/join.html">JOIN</a>
+          </li>
+        </ul>
+        <?
+          }
+          else
+          {
+        ?>
+        <ul class="login">
+          <li>
+            <a href="../login/logout.php">LOGOUT</a>
+          </li>
+          <li>
+            <a href="../member/member_form_modify.php">MODIFY</a>
+          </li>
+        </ul>
+        <?
+          }
+        ?>
+        <nav id="gnb">
+          <h2 class="hidden">글로벌네비게이션영역</h2>
+          <ul class="dropdownmenu">
+            <li class="m1 menu">
+              <h3><a class="depth1" href="../sub1/sub1_1.html">회사소개</a></h3>
+              <ul>
+                <li><a href="../sub1/sub1_1.html">코오롱글로벌</a></li>
+                <li><a href="../sub1/sub1_2.html">CEO인사말</a></li>
+                <li><a href="../sub1/sub1_3.html">회사연혁</a></li>
+                <li><a href="../sub1/sub1_4.html">네트워크</a></li>
+                <li><a href="../sub1/sub1_5.html">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li class="m2 menu">
+              <h3><a class="depth1" href="../sub2/sub2_1.html">안전경영</a></h3>
+              <ul>
+                <li><a href="../sub2/sub2_1.html">안전보건 경영방침</a></li>
+                <li><a href="../sub2/sub2_2.html">안전보건 경영인증</a></li>
+                <li><a href="../sub2/sub2_3.html">안전보건 경영시스템</a></li>
+                <li><a href="../sub2/sub2_4.html">안전보건 상생경영</a></li>
+              </ul>
+            </li>
+            <li class="m3 menu">
+              <h3><a class="depth1" href="../sub3/sub3_1_1.html">사업분야</a></h3>
+              <ul>
+                <li><a href="../sub3/sub3_1_1.html">유통</a></li>
+                <li><a href="../sub3/sub3_2_1.html">상사</a></li>
+                <li><a href="../sub3/sub3_3_1.html">건설</a></li>
+              </ul>
+            </li>
+            <li class="m4 menu">
+              <h3><a class="depth1" href="../sub4/sub4_1.html">경영정보</a></h3>
+              <ul>
+                <li><a href="../sub4/sub4_1.html">재무정보</a></li>
+                <li><a href="../sub4/sub4_2.html">주가정보</a></li>
+                <li><a href="../sub4/sub4_3.html">공시정보</a></li>
+                <li><a href="../sub4/sub4_4.html">투자정보</a></li>
+              </ul>
+            </li>
+            <li class="m5 menu">
+              <h3><a class="depth1" href="../greet/list.php">홍보센터</a></h3>
+              <ul>
+                <li><a href="../greet/list.php">공지사항</a></li>
+                <li><a href="../concert/list.php">코오롱뉴스</a></li>
+                <li><a href="../gallery/list.php">코오롱갤러리</a></li>
+              </ul>
+            </li>
+            <li class="m6 menu">
+              <h3><a class="depth1" href="../sub6/sub6_1.html">인재채용</a></h3>
+              <ul>
+                <li><a href="../sub6/sub6_1.html">인재상</a></li>
+                <li><a href="../sub6/sub6_2.html">직무소개</a></li>
+                <li><a href="../sub6/sub6_3.html">교육제도</a></li>
+                <li><a href="../sub6/sub6_4.html">채용FAQ</a></li>
+                <li><a href="../sub6/sub6_5.html">채용문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>

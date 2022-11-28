@@ -1,0 +1,40 @@
+#content .list_top{display: flex; justify-content: space-between; margin-bottom: 20px;}
+#content .list_top p {color:#666}
+#content .list_top p span{color: #1b4aa0; font-weight: 500;}
+#content .list_top select{padding: 10px 50px; border: 1px solid #eee; border-radius: 5px;}
+#content #list_content{margin: 30px auto 50px;}
+#content #list_item{width: 1000px; margin: 0 auto; border-bottom: 1px solid #ddd;}
+#content #list_item a{display: flex; justify-content: space-between; align-items: center; height: 300px; padding: 30px;}
+#content #list_item .list_img{width: 300px;}
+#content #list_item .list_img img{width:100%}
+#content #list_item .list_info{padding: 30px; width: 700px;}
+#content #list_item .info_top{display: flex; justify-content:flex-start; align-items: center; margin-bottom: 20px;}
+#content #list_item .info_top span{color: #666; width: 5%; display: block; margin-right: 10px;} 
+#content #list_item .info_top p{color: #1b4aa0; width: 90%; text-align: start; font-size: 1.25rem;}
+#content #list_item .item_content{margin-bottom: 20px; text-align: start; line-height: 1.5rem;}
+#content #list_item .info_bottom{display: flex; justify-content: space-between; align-items: center; }
+#content #list_item .info_bottom span{display: block; width: 25%; font-size: 0.75rem; color:#666}
+#content #list_item  p.ripple_p{display: flex; justify-content: space-between; width: 5%; align-items: center;}
+#content #list_item p.ripple_p i{color: #999;}
+
+
+#content #page_button span{display: block; text-indent: -999px; width: 10px; 
+    height: 15px;overflow: hidden; }
+#content #page_button span:nth-of-type(1){background: url(../images/left.png)no-repeat; margin-right: 10px;}
+#content #page_button span:nth-of-type(2){background: url(../images/right.png)no-repeat}
+#content #page_button{ margin: 30px auto;}
+#content #page_button #page_num{margin: 10px auto; display: flex; justify-content: center; align-items: center;}
+#content #page_button .active{display: flex; font-weight: 500;
+    justify-content: center; align-items: center; width: 30px; height: 30px; background: #1b4aa0; color: #fff; margin-right: 10px;}
+#content #page_button #page_num a{ display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; border:1px solid #ddd; color: #ddd; margin-right: 10px; transition: all .5s ease;}
+#content #page_button #page_num a:hover{background: #1b4aa0; color: #fff; border: 1px solid #1b4aa0;}
+#content #page_button #button{ display: flex; justify-content: flex-end; align-items: center;}
+#content #page_button #button a{ display: flex; justify-content: center; align-items: center; width: 150px; padding: 15px 0; border-radius: 5px; 
+    margin-left: 20px; color: #1b4aa0; border: 1px solid #1b4aa0; transition: all .5s ease;}
+#content #page_button #button a:hover{background: #1b4aa0; color: #fff;}
+
+#content #list_search{display: flex; justify-content: space-between; align-items: center; width: 700px; margin: 50px auto 50px;}
+#content #list_search select{ border: 1px solid #eee; border-radius: 5px; text-align: center; display: block; width: 150px; padding: 15px 20px;}
+#content #list_search input{border: 1px solid #eee;border-radius: 5px; width: 300px; padding: 15px 20px; }
+#content #list_search button{display: block; color: #fff; background: #1b4aa0; text-align: center; width: 150px; padding: 15px 0; transition: all .5s ease; border: none;}
+#content #list_search button:hover{background: #2470fd;} 

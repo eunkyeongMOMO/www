@@ -1,0 +1,18 @@
+
+.main{background: url(../images/sub2/sub2_visual.jpg) center no-repeat; background-size: cover;}
+#content .content_area .summary {margin-top: 20px; width: 86%;}
+#content .content_area .summary p span{color: #3567fe; font-weight: 500;}
+
+#content .safety01{ width: 90%; margin:20px auto;}
+#content .safety01 ul{ display: flex; position: relative; left: 0; width: 700%;}
+#content .safety01 li{width: 300px; margin: 20px 15px;}
+#content .safety01 img{width: 100%; border-radius: 20px;}
+#content .safety01 dl{width: 96%; margin: 15px auto 0; text-align: start;}
+#content .safety01 dt{font-weight: 500; font-size: 1.143rem; color: #3567fe; margin-bottom: 20px; position: relative;}
+#content .safety01 dt::after{content: ''; display: block; width: 100%; height: 1px;background: #3567fe; position: absolute; left: 0; bottom: -5px;}
+#content .safety01 dd{line-height: 1.7rem; margin-bottom: 20px;}
+#content .sign{width: 70%; margin: 15px auto 30px;}
+#content .sign div{display: flex; margin: 10px auto; justify-content: center; align-items: flex-end;}
+#content .sign div{font-weight: 500; font-size: 1.143rem; line-height: 1.7rem;}
+#content .sign div img{width: 130px;margin-left: 10px;}
+#content .sign>span{font-size: 0.719rem; color: #666;}

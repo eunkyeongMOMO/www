@@ -1,0 +1,17 @@
+#content #form_title{ font-size: 1.75rem; margin: 30px auto;}
+#content .write_row1{ display: flex; justify-content: flex-start; width: 90%; margin: 20px auto;}
+#content .write_row1 span{ display: block; margin-right: 20px;}
+#content .write_row1 span:nth-of-type(1){color: #555;}
+#content .write_row1 span:nth-of-type(2){color: #1b4aa0; margin-right: 100px;}
+#content #write_form p {width: 90%; margin: 0 auto; text-align: start; color: #555;}
+#content #write_row2 input{outline: #1b4aa0;width: 100%; border: 1px solid #ddd; border-radius: 5px; padding: 20px; width: 90%; margin: 20px auto;}
+#content #write_row3 textarea{width: 100%; outline: #1b4aa0; border: 1px solid #ddd; border-radius: 5px;width: 90%; margin: 20px auto 50px;}
+#content .file_form { width: 30%; margin: 20px 65% 30px 5%; border-bottom: 1px solid #eee; padding-bottom: 10px;
+    display: flex; justify-content:left; align-items: center;}
+#content .file_form input{color: #1b4aa0;  display: block; align-items: center; background: #fff; width: 100%;}
+
+#content #button{ display: flex; width: 90%; margin: 30px auto;
+    justify-content: flex-end; align-items: center;}
+#content #button a{display: flex; justify-content: center; align-items: center; width: 150px; padding: 15px 0; border-radius: 5px; 
+    margin-left: 20px; background: #fff; color: #1b4aa0; border: 1px solid #1b4aa0; transition: all .5s ease;}
+#content #button a:hover{background: #1b4aa0; color: #fff;}

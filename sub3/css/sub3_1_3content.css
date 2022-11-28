@@ -1,0 +1,50 @@
+#content .summary { width: 2000px; margin: 0 auto 100px; padding-bottom: 100px; background-color:rgba(220, 220, 255, 0.093) } 
+#content .summary video { width: 2000px; margin: 0 auto; } 
+#content h3 { color:#1b4aa0; font-weight: 700; font-family:'Roboto', sans-serif; font-size: 5em; text-align: start; width: 1200px; margin: 30px auto; } 
+#content .summary span { font-size: 2.5em; font-weight: 700; display: block; margin: -100px auto 50px; text-align: end; width: 1200px; opacity: 0;} 
+#content .summary p { white-space: pre-line; opacity: 0; text-align: end; font-size: 1.25em; line-height: 1.75em; margin-bottom: 120px; width: 1200px; margin: 0 auto; } 
+
+
+#content section:nth-of-type(1) { margin: 0 auto; width: 2000px; } 
+#content .content_box { width: 2000px; margin: 50px 0 50px 400px; position: relative; display: flex; } 
+#content .logo::after { clear: both; } 
+#content .logo { margin:100px 0; width: 400px; float: left; text-align: start; opacity: 0; } 
+#content .logo img { width: 220px; margin-bottom: 200px; } 
+#content .logo p { color: #666; white-space: pre-line; position: relative; width: 400px; } 
+#content .logo p::before { content: ''; width: 250px; height: 1px; background: #666; position: absolute; left: 0; top:-20px } 
+#content .goods { overflow: hidden; opacity: 0; } 
+#content .item_box { width:5400px; display:flex; justify-content: center; position: relative; } 
+#content .item { display: flex; width:2700px; } 
+#content .item li { width: 400px; height: 600px; margin: 50px 25px 200px; position: relative; font-family: 'Roboto', sans-serif; } 
+#content .item img { width: 400px; } 
+#content .item li:hover div { bottom: 30px; } 
+#content .item div { position:absolute; left: 30px; bottom: -40px; z-index: 1; transition: all 0.5s ease-out; } 
+#content .item p { text-transform: uppercase; font-size: 1.25em; text-align: start; color: #fff; } 
+#content .item a { display: block; width:200px; height: 40px; border-radius: 20px; margin-top: 20px; border:1px solid #fff; position: relative; transition: all .5s ease-out; } 
+#content .item a::after { content: ''; display: block; width: 30px; height: 1px; background: #fff; position: absolute; left: 25px; top: 20px; transform-origin: 0 0; transform: scale(0); transition: all 0.5s ease-out; } 
+#content .item a span { color: #fff; position: absolute; top: 10px; left: 50px; transform: translateX(0); transition: all 0.5s ease-out; } 
+#content .item a:hover { border: 1px solid rgba(255,255,255,0.0); background: rgba(255,255,255,0.3); } 
+#content .item a:hover::after { transform: scale(1); } 
+#content .item a:hover span { transform:translateX(10px); } 
+#content .left { top:30%; } 
+#content .right { top:40% } 
+#content .left,#content .right { background: #333; color:#fff; display: block; transition:all .5s ease-out; position:absolute; left: 340px; border-radius: 50%; width: 50px; height: 50px; font-size: 1.75em; padding-top: 2px; box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.05); } 
+#content .left:hover,#content .right:hover { background:#fff; color: #333; } 
+
+
+#content .shop { width: 1200px; margin: 100px auto; overflow: hidden; } 
+#content .shop li { width: 550px; position:relative; margin-bottom: 100px; opacity: 0; } 
+#content .shop li:nth-of-type(odd) { float: left; margin-right: 50px; } 
+#content .shop li:nth-of-type(even) { float: right; } 
+#content .shop li:hover p { opacity: 0; } 
+#content .shop li:hover dl { opacity: 1; } 
+#content .shop p { width: 200px; height: 40px; border:1px solid #fff; color:#fff; position: absolute; left:30px; bottom: 30px; padding-top: 5px; background: rgba(0,0,0,0.2); transition: all .5s ease-out; } 
+#content .shop dl { width: 550px; height: 350px; text-align: start; color:#fff; position: absolute; z-index: 2; background: rgba(0,0,0,0.3); transition: all .5s ease-out; left:0; top:0; border:2px solid #666; opacity: 0; transition:all .5 ease-out; } 
+#content .shop dt { margin: 230px 0 20px 30px; font-size: 1.25em; } 
+#content .shop dd { white-space: pre-line; margin-left: 30px; }
+
+#content .summary.moved span { animation: up 1s ease-out forwards; } 
+#content .summary.moved p { animation: up 1.2s ease-out forwards; } 
+#content section:nth-of-type(1).moved .logo { animation: left_on 1s ease-out forwards; } 
+#content section:nth-of-type(1).moved .goods { animation: right_on 1s ease-out forwards; } 
+#content .shop li.moved { animation: up 1s ease-out forwards; } 

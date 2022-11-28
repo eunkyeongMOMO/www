@@ -1,0 +1,28 @@
+body{background: #efefef;}
+#wrap{width: 800px; margin: 150px auto; 
+    background: #fff; box-shadow: 3px 3px 5px 7px rgba(0,0,0,0.05);
+    padding: 70px 0;}
+.logo{display: block; text-align: center; margin-bottom: 30px;}
+#title{ text-align: center; margin-bottom: 20px;}
+#title h2{font-size: 1.25rem; margin: 10px auto;}
+#title p{}
+#id_input_button{width: 70%; margin: 20px auto;}
+#id_input_button .find_input{width: 99%;}
+#id_input_button label{ display: block; margin-bottom: 15px;}
+#id_input_button input,select{ width: 30.33%; padding: 15px; margin-bottom: 10px;}
+#id_input_button input[type=button]{ font-weight: 700;
+    display: block; width: 80%; margin: 20px auto;  border: 0;
+    padding: 15px; background:  #1b4a9f; color:#fff; border-radius: 5px;
+    transition: all .5s ease;
+}
+#id_input_button input[type=button]:hover{
+    background: #2d75fa;
+}
+#id_input_button option{padding: 15px; display: block;}
+input:focus, select:focus {outline: none !important; border: 1px solid #1b4a9f;}
+.go{display: flex;
+     justify-content: space-between; align-items: center; 
+    width: 70%; margin: 20px auto;}
+.go li span{color: #ddd;}
+.go li a{color: #666; transition: all .5s ease;}
+.go li a:hover{color:#1b4a9f;}

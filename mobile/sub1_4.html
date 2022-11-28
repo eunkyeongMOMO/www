@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코오롱글로벌</title>
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub1-4content.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+    <script src="https://kit.fontawesome.com/969baeb221.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+    // <![CDATA[
+    try {
+    window.addEventListener('load', function(){
+        setTimeout(scrollTo, 0, 0, 1); 
+    }, false);
+    } 
+    catch(e) {}
+    // ]]>
+ </script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=83723185d90a7b9769fcb93caee8ff55"></script>
+    <script src="./js/map.js"></script>
+</head>
+<body>
+  <? include "./mobile_header.html"?>
+<div class="main">
+    <h3>회사소개</h3>
+  </div>
+  <div class="subnav swiper-container">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide"><a href="./sub1_1.html">코오롱글로벌</a></li>
+      <li class="swiper-slide"><a href="./sub1_2.html">회사연혁</a></li>
+      <li class="swiper-slide"><a href="./sub1_3.html">네트워크</a></li>
+      <li class="swiper-slide current"><a href="./sub1_4.html">찾아오시는길</a></li>
+    </ul>
+  </div>
+  <article id="content">
+    <div class="title_area">
+      <div class="line_map">
+        <span>홈</span>
+        &gt;
+        <span>회사소개</span>
+        &gt;
+        <strong>찾아오시는길</strong>
+      </div>
+      <h2>찾아오시는길</h2>  
+    </div>
+    <div class="content_area">
+        <div id="map">
+        </div> 
+        <div class="map_info">
+          <dl>
+              <dt>코오롱 글로벌 본사</dt>
+              <dd>인천 연수구 송도과학로32 (송도동)<br> 송도 IT센터</dd>
+              <dd>전화번호 <span>032 420 9111</span> </dd> 
+              <dd> 팩스<span>032 420 9119</span> </dd></dl>
+            <a href="http://kko.to/WYOroyNPa" target="_blank" title="네이버 지도 페이지가 새창에서 열림">카카오 지도로 보기</a>
+            <a href="https://naver.me/FuVSaBdU" target="_blank" title="카카오 지도페이지가 새창에서 열림">네이버 지도로 보기</a>
+          </div>
+        <div class="roadmap">
+          <ul>
+            <li class="road_bus">
+               <div><img src="./images/sub1/bus.png" alt="오시는길 안내-버스"></div>
+              <dl >
+                <dt>303</dt>
+                <dd>
+                  <span>성지아파트 정류장 하차</span>
+                  <p>건너편 정류장 91번 버스 탑승 → 송도해모로/ 회사 정문 건너편 하차 </p>
+                  <span>정류장 ID 39-447</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>1301</dt>
+                <dd>
+                  <span>성지아파트 정류장 하차</span>
+                  <p>건너편 정류장 91번 버스 탑승 → 송도해모로/ 회사 정문 건너편 하차 </p>
+                  <span>정류장 ID 39-447</span>
+                </dd>
+              </dl>
+              <dl>
+                  <dt>M6405</dt>
+                  <dd>
+                  <span>성지아파트 정류장 하차</span>
+                  <p>건너편 정류장 91번 버스 탑승 → 송도해모로/ 회사 정문 건너편 하차 </p>
+                  <span>정류장 ID 39-447</span>
+                </dd>
+              </dl>
+              <dl> 
+                <dt>M6724</dt>
+                <dd>
+                  <span>연세대학교 국제캠퍼스 하차</span>
+                  <p>도보로 5분 소요</p>
+                  <span>정류장 ID 39-725</span>
+                </dd>
+              </dl>
+            </li>
+            <li class="road_subway">
+            <div><img src="./images/sub1/subway.png" alt="오시는길 안내-지하철"></div>
+            <dl>
+              <dt>인천 1호선</dt>
+              <dd>
+                <span>테크노파크역</span>
+                <p><span>2번 출구 하차</span>도보로 10분 소요 </p>
+              </dd></dl>
+              <dl><dt>인천 1호선</dt>
+              <dd>
+                <span>캠퍼스타운역</span>
+                <p><span>3, 4번 출구 하차</span>건너편 정류장 91번 버스(초록색) 승차 → 송도해모로 하차</p>
+              </dd>
+            </dl>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </article>
+  <? include "./mobile_footer.html"?>
+  <script src="./js/sub_menu.js"></script>
+</body>
+</html>
+
