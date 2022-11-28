@@ -6,6 +6,9 @@ body{background:#efefef;}
 padding: 50px 0; }  
 #content h2{ text-align: center; font-size: 1.25rem;}
 #content form{ width: 80%; margin: 30px auto;}
+#content tr td .notice_txt .fail{color:#ff3a3a; }
+#content tr td .notice_txt .success{color:#007dfa; }
+#content tr td .notice_txt{ margin: 5px 0 5px 10px; font-size: .75rem;}
 #content tr{ margin-bottom: 30px; display: block; width: 550px;}
 #content th{ font-weight: 400; text-align: start; 
     margin-bottom: 10px; display: block;}
@@ -13,6 +16,10 @@ padding: 50px 0; }
 #content tr input, select{display: block; padding: 15px; border: 1px solid #eee; border-radius: 5px;}
 #content tr td .text_box{width: 550px;}
 #content tr td .email_box{width: 250px;}
+
+#content .phone td,#content .email td{width: 100%; display: flex; justify-content: space-between; align-items: center;} 
+
+#content tr td .hp{width: 150px;}
 #content tr select{padding: 15px 50px;}
 #content tr:nth-last-of-type(1){width: 80%; margin: 50px auto 0;}
 #content tr:nth-last-of-type(1) td{display: flex; justify-content: space-between; align-items: center;}

@@ -99,7 +99,21 @@
         </div>
 		<div class="list_top">
 			<p>총 <span> <?= $total_record ?> </span>개의 게시물이 있습니다.  </p>
-		<select id="scale" name="scale" onchange="location.href='list.php?scale='+this.value">
+			<ul class="list">
+				<li>
+					<a href="list.php?liststyle=list&scale=<?=$scale?>">
+					<span class="hidden">목록형으로보기</span>
+					<i class="fa-solid fa-list"></i>
+					</a>
+				</li>
+				<li>
+				<a href="list.php?liststyle=box&scale=<?=$scale?>">
+					<span class="hidden">박스형으로보기</span>
+					<i class="fa-brands fa-buromobelexperte"></i>
+				</a>
+				</li>
+			</ul>
+		<select id="scale" name="scale" onchange="location.href='list.php?&liststyle=<?=$liststyle?>&scale='+this.value">
 					<option value=' '>선택</option>
 					<option value='5'>5</option>
                     <option value='10'>10</option>
@@ -109,6 +123,7 @@
 		</div>
 
 		<div id="list_content">
+		<div class="news_list">
 <?		
    for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)                    
    {
@@ -136,8 +151,9 @@
 
 
 ?>
+		
 			<div id="list_item">
-				<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>&scale=<?=$scale?>">
+				<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>&scale=<?=$scale?>&liststyle=<?=$liststyle?>">
 				<div class="list_img"><img src="<?=$item_img?>" alt=""></div>
 				<div class="list_info">
 					<div class="info_top">
@@ -175,13 +191,18 @@
 		 			</div>
 				
 				</div>
-			</a>
-		 </div>
+				</a>
+			</div>
+	
 <?
    	   $number--;
    }
 ?>
-			<div id="page_button">
+</div>
+
+</div> <!-- end of content area-->
+
+		<div id="page_button">
 				<div id="page_num"> 
 					<span>이전</span>
 			<?
@@ -194,7 +215,7 @@
 					}
 					else
 					{ 
-						echo "<a href='list.php?page=$i &scale=$scale'> $i </a>";
+						echo "<a href='list.php?page=$i &scale=$scale&liststyle=<?=$liststyle?>'> $i </a>";
 					}      
 			}
 			//scale값을 같이 넘겨줘야한다.
@@ -202,12 +223,12 @@
 			<span>다음</span> 
 				</div>
 				<div id="button">
-					<a href="list.php?page=<?=$page?>&scale=<?=$scale?>">목록</a>
+					<a href="list.php?page=<?=$page?>&scale=<?=$scale?>&liststyle=<?=$liststyle?>">목록</a>
 				<? 
 					if($userid)
 					{
 				?>
-						<a href="write_form.php?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale?>">글쓰기</a>
+						<a href="write_form.php?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale?>&liststyle=<?=$liststyle?>">글쓰기</a>
 				<?
 					}
 				?>
@@ -224,9 +245,30 @@
 			<input type="text" name="search"placeholder="검색어를 입력하세요">
 			<button type="submit">검색</button>
 		</form>
-</div> <!-- end of content area-->
 </article>
 <? include "../common/sub_footer.html"?>
+
+<?
+		if ($liststyle == 'list'){
+			$liststyle = 'list';	// 리스트 스타일
+			echo "
+				<script>
+					$('.list li').removeClass('active');
+					$('.list li:eq(0)').addClass('active');
+				</script>
+			";
+		} else if($liststyle == 'box'){
+			$liststyle = 'box';	// 리스트 스타일
+			echo "
+				<script>
+					$('.list li').removeClass('active');
+					$('.list li:eq(1)').addClass('active');
+					$('.news_list').addClass('list_style_box');
+				</script>
+			";
+
+		}
+	?>
 </body>
 </html>
 

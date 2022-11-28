@@ -1,13 +1,21 @@
-#content .list_top{display: flex; justify-content: space-between; margin-bottom: 20px;}
-#content .list_top p {color:#666}
+#content .list_top{display: flex; justify-content: space-between; align-items: center;}
+#content .list_top p {color:#666; width: 75%; text-align: start; padding-left: 5%;}
 #content .list_top p span{color: #1b4aa0; font-weight: 500;}
-#content .list_top select{padding: 10px 50px; border: 1px solid #eee; border-radius: 5px;}
+#content .list{display: flex; justify-content: space-between; align-items: center; width: 10%;}
+#content .list li{ width: 49%; border: 1px solid #eee; transition: all .5s ease;}
+#content .list li.active { border: 1px solid #1b4aa0;}
+#content .list li:hover { border: 1px solid #1b4aa0;}
+#content .list li a{display: block; padding: 10px;}
+#content .list li a i{display: block; color: #999; transition: all .5s ease; font-size: 1.25rem;}
+#content .list li a:hover i{color: #2470fd;}
+#content .list li.active a i{color: #1b4aa0;}
+#content .list_top select{padding: 10px 50px; border: 1px solid #eee; border-radius: 5px; width: 14%;}
 #content #list_content{margin: 30px auto 50px;}
-#content #list_item{width: 1000px; margin: 0 auto; border-bottom: 1px solid #ddd;}
-#content #list_item a{display: flex; justify-content: space-between; align-items: center; height: 300px; padding: 30px;}
-#content #list_item .list_img{width: 300px;}
+#content #list_item{width: 1200px; margin: 0 auto; border-bottom: 1px solid #ddd;}
+#content #list_item a{display: flex; justify-content: space-between; align-items: center; height: 420px; padding: 30px;}
+#content #list_item .list_img{width: 400px;}
 #content #list_item .list_img img{width:100%}
-#content #list_item .list_info{padding: 30px; width: 700px;}
+#content #list_item .list_info{padding: 30px; width: 800px;}
 #content #list_item .info_top{display: flex; justify-content:flex-start; align-items: center; margin-bottom: 20px;}
 #content #list_item .info_top span{color: #666; width: 5%; display: block; margin-right: 10px;} 
 #content #list_item .info_top p{color: #1b4aa0; width: 90%; text-align: start; font-size: 1.25rem;}
@@ -16,6 +24,18 @@
 #content #list_item .info_bottom span{display: block; width: 25%; font-size: 0.75rem; color:#666}
 #content #list_item  p.ripple_p{display: flex; justify-content: space-between; width: 5%; align-items: center;}
 #content #list_item p.ripple_p i{color: #999;}
+
+#content .news_list.list_style_box {display: flex; flex-wrap: wrap; width: 1200px; margin: 20px auto 0; justify-content: space-between; align-items: center;}
+#content .news_list.list_style_box #list_item{width: 32.33%; margin:0 0 20px; border:1px solid #ddd; transition: all .5s ease;}
+#content .news_list.list_style_box #list_item:hover{border: 1px solid #1b4aa0;}
+#content .news_list.list_style_box #list_item a{ display: block; height: 500px;padding: 10px;}
+#content .news_list.list_style_box #list_item .list_info{width: 96%; margin: 10px auto; padding: 0;}
+#content .news_list.list_style_box #list_item .list_img{width: 96%; margin: 10px auto;}
+#content .news_list.list_style_box #list_item .info_top{width: 96%; margin: 0 auto;}
+#content .news_list.list_style_box #list_item .info_top{font-size: 1rem;}
+#content .news_list.list_style_box #list_item .item_content{display: none;}
+#content .news_list.list_style_box #list_item .info_bottom{width: 96%; margin: 20px auto;}
+
 
 
 #content #page_button span{display: block; text-indent: -999px; width: 10px; 

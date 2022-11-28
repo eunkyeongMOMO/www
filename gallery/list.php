@@ -136,10 +136,12 @@
 
 
 ?>
+		<div class="item_box">
 			<div id="list_item">
 				<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>&scale=<?=$scale?>">
 				<div class="list_img">
-					<img src="<?=$item_img?>" alt=""></div>
+					<img src="<?=$item_img?>" alt="">
+				</div>
 				<div class="list_info">
 					<div class="info_top">
 					<span><?= $number ?></span> 
@@ -169,10 +171,14 @@
 				</div>
 			</a>
 		 </div>
+		
 <?
    	   $number--;
    }
 ?>
+
+</div>
+ </div> <!-- end of list content -->
 			<div id="page_button">
 				<div id="page_num"> 
 					<span>이전</span>
@@ -205,7 +211,7 @@
 				?>
 				</div>
 			</div> <!-- end of page_button -->		
-        </div> <!-- end of list content -->
+
 		<form id="list_search"  name="board_form" method="post" action="list.php?mode=search">
 				<select name="find">
                     <option value='subject'>제목</option>

@@ -89,13 +89,13 @@
 	if($mode=="modify")
 	{
 ?>
-		<form  name="board_form" method="post" action="insert.php?mode=modify&num=<?=$num?>&page=<?=$page?>&table=<?=$table?>&scale<?=$scale?>" enctype="multipart/form-data"> 
+		<form  name="board_form" method="post" action="insert.php?mode=modify&num=<?=$num?>&page=<?=$page?>&table=<?=$table?>&scale<?=$scale?>&liststyle=<?=$liststyle?>" enctype="multipart/form-data"> 
 <?
 	}
 	else
 	{
 ?>
-		<form  name="board_form" method="post" action="insert.php?table=<?=$table?>&page=<?=$page?>&scale<?=$scale?>" enctype="multipart/form-data">
+		<form  name="board_form" method="post" action="insert.php?table=<?=$table?>&page=<?=$page?>&scale<?=$scale?>&liststyle=<?=$liststyle?>" enctype="multipart/form-data">
 		<!-- enctype 첨부할 파일이 있을때 무조건 써줘야한다.  -->
 <?
 	}
@@ -183,7 +183,7 @@
 	</div>
 		<div id="button">
 			<a href="#" onclick="check_input()">저장하기</a>
-			<a href="list.php?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale?>">목록</a>
+			<a href="list.php?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale?>&liststyle=<?=$liststyle?>">목록</a>
 		</div>
 
 		</form>

@@ -157,8 +157,7 @@
 			$img_name = $image_copied[$i];
 			$img_name = "./data/".$img_name;
 			$img_width = $image_width[$i];
-			s
-			echo "<img src='$img_name' width='$img_width'>";
+			echo "<img class='view_img' src='$img_name' width='$img_width' style='display: block; margin: 10px auto'>";
 		}
 	}
 ?>
@@ -208,12 +207,12 @@
 		</div> <!-- end of ripple -->
 
 		<div id="button">
-				<a href="list.php?table=<?=$table?>&page=<?=$page?>&scale<?=$scale?>">목록</a>
+				<a href="list.php?table=<?=$table?>&page=<?=$page?>&scale<?=$scale?>&liststyle=<?=$liststyle?>">목록</a>
 <? 
 	if($userid==$item_id || $userid=="admin" || $userlevel==1 )
 	{
 ?>
-				<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>&scale<?=$scale?>">글수정</a>
+				<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>&scale<?=$scale?>&liststyle=<?=$liststyle?>">글수정</a>
 				<a href="javascript:del('delete.php?table=<?=$table?>&num=<?=$num?>')">글삭제</a>
 <?
 	}
@@ -222,7 +221,7 @@
 	if($userid)
 	{
 ?>
-				<a href="write_form.php?table=<?=$table?>&page=<?=$page?>&scale<?=$scale?>">새글쓰기</a>
+				<a href="write_form.php?table=<?=$table?>&page=<?=$page?>&scale<?=$scale?>&liststyle=<?=$liststyle?>">새글쓰기</a>
 <?
 	}
 ?>

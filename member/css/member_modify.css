@@ -10,14 +10,16 @@ padding: 50px 0; }
 #content form .id{ display: flex; justify-content:flex-start; align-items: center;} 
 #content form .id p{margin-bottom: 0;}
 #content form .id span{font-size: 1.25rem; color: #1b4a9f; display: block; margin-left: 20px;}
-#content form input, select{width: 70%; padding: 10px; border: 1px solid #eee;}
+#content form input, select{width: 100%; padding: 10px; border: 1px solid #eee;}
 #content form p span{color:#ff1d1d; font-size: .75rem; display: inline-block; margin-left: 5px;}
 #content form li{position: relative; margin-bottom: 30px;}
 #content form .phone{display: flex; justify-content: space-between; align-items: center;}
 #content form .phone input,#content form .phone select{width: 28%;}
 #content form .email{display: flex; justify-content: space-between; align-items: center;}
 #content form .email input{ width: 45%;}
-
+#content tr td .notice_txt .fail{color:#ff3a3a; }
+#content tr td .notice_txt .success{color:#007dfa; }
+#content tr td .notice_txt{ margin: 5px 0 5px 10px; font-size: .75rem;}
 #content form #nick a{ padding: 10px 20px; margin-left: 10px; font-size: .75rem;
      display: inline-block; background: #1b4a9f; color: #fff; border-radius: 5px;}
 #content form li::after{content: ''; width: 100%; position: absolute; left: 0; bottom: -15px;

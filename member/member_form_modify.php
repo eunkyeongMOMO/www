@@ -14,70 +14,95 @@
     <title>코오롱글로벌-회원정보수정</title>
     <link rel="stylesheet" href="../common/css/common.css">
 	<link rel="stylesheet" href="./css/member_modify.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+	
 <script>
-   function check_id()
-   {
-     window.open("check_id.php?id=" + document.member_form.id.value,
-         "IDcheck",
-          "left=200,top=200,width=250,height=100,scrollbars=no,resizable=yes");
-   }
 
-   function check_nick()
-   {
-     window.open("../member/check_nick.php?nick=" + document.member_form.nick.value,
-         "NICKcheck",
-          "left=200,top=200,width=250,height=100,scrollbars=no,resizable=yes");
-   }
+$(document).ready(function() {
+     $("#nick").keyup(function() {    
+            var nick = $('#nick').val();
 
+            $.ajax({
+                type: "POST",
+                url: "check_nick.php",
+                data: "nick="+ nick,  
+                cache: false, 
+                success: function(data)
+                {
+                    $("#loadtext2").html(data);
+                }
+            });
+        }); 
+
+        //pass_confirm
+        $("#pass_confirm").keyup(function(){
+            
+            if($('#pass').val() == $('#pass_confirm').val()){
+                $('#loadtext_pass_confirm').html('<span class="success">비밀번호가 일치합니다.</span>');
+                $('#pass_confirm').parent().parent('tr').removeClass('fail');
+                $('#pass_confirm').parent().parent('tr').addClass('success');
+            } else {
+                $('#loadtext_pass_confirm').html('<span class="fail">비밀번호가 일치하지 않습니다.</span>');
+                $('#pass_confirm').parent().parent('tr').removeClass('success');
+                $('#pass_confirm').parent().parent('tr').addClass('fail');
+            }
+        });
+
+    });
    function check_input()
-   {
-      if (!document.member_form.pass.value)
-      {
-          alert("비밀번호를 입력하세요");    
-          document.member_form.pass.focus();
-          return;
-      }
+        {
+            if (!document.member_form.pass.value)
+            {
+                alert("비밀번호를 입력하세요");    
+                document.member_form.pass.focus();
+                return;
+            }
 
-      if (!document.member_form.pass_confirm.value)
-      {
-          alert("비밀번호확인을 입력하세요");    
-          document.member_form.pass_confirm.focus();
-          return;
-      }
+            if (!document.member_form.pass_confirm.value)
+            {
+                alert("비밀번호확인을 입력하세요");    
+                document.member_form.pass_confirm.focus();
+                return;
+            }
 
-      if (!document.member_form.name.value)
-      {
-          alert("이름을 입력하세요");    
-          document.member_form.name.focus();
-          return;
-      }
+            if (!document.member_form.name.value)
+            {
+                alert("이름을 입력하세요");    
+                document.member_form.name.focus();
+                return;
+            }
 
-      if (!document.member_form.nick.value)
-      {
-          alert("닉네임을 입력하세요");    
-          document.member_form.nick.focus();
-          return;
-      }
+            if (!document.member_form.nick.value)
+            {
+                alert("닉네임을 입력하세요");    
+                document.member_form.nick.focus();
+                return;
+            } else if(document.member_form.nick.value.indexOf(' ') > -1)
+            {
+                alert("공백을 포함하지 않는 닉네임을 입력하세요");    
+                document.member_form.nick.focus();
+                return;
+            }
 
-      if (!document.member_form.hp2.value || !document.member_form.hp3.value )
-      {
-          alert("휴대폰 번호를 입력하세요");    
-          document.member_form.nick.focus();
-          return;
-      }
+            if (!document.member_form.hp2.value || !document.member_form.hp3.value )
+            {
+                alert("휴대폰 번호를 입력하세요");    
+                document.member_form.nick.focus();
+                return;
+            }
 
-      if (document.member_form.pass.value != 
-            document.member_form.pass_confirm.value)
-      {
-          alert("비밀번호가 일치하지 않습니다.\n다시 입력해주세요.");    
-          document.member_form.pass.focus();
-          document.member_form.pass.select();
-          return;
-      }
+            if (document.member_form.pass.value != 
+                    document.member_form.pass_confirm.value)
+            {
+                alert("비밀번호가 일치하지 않습니다.\n다시 입력해주세요.");    
+                document.member_form.pass.focus();
+                document.member_form.pass.select();
+                return;
+            }
 
-      document.member_form.submit();
-   }
-
+            document.member_form.submit();
+        }
    function reset_form()
    {
       document.member_form.id.value = "";
@@ -128,19 +153,20 @@
 			<ul>
                 <li class="id"><p>아이디</p>
                    <span> <?= $row[id] ?></span></li>
-                <li><p>비밀번호<span>(필수)</span></p>
+                <li><p>비밀번호<span>*</span></p>
                     <input type="password" name="pass" value=""></li>
-                <li><p>비밀번호 확인<span>(필수)</span></p>
+                <li><p>비밀번호 확인<span>*</span></p>
                     <input type="password" name="pass_confirm" value=""></li>
-                <li><p>이름 <span>(필수)</span></p>
+                    <div class="notice_txt" id="loadtext_pass_confirm"></div>
+                    <li><p>이름 <span>*</span></p>
                     <input type="text" name="name" value="<?= $row[name] ?>"></li>
-                <li><p>닉네임 <span>(필수)</span></p>   
+                <li><p>닉네임 <span>*</span></p>   
                     <div id="nick"> 
                         <input type="text" name="nick" value="<?= $row[nick] ?>">
-                        
+                        <div class="notice_txt" id="loadtext2"></div>
                     </div></li>
                 <li>
-                    <p>핸드폰번호 <span>(필수)</span></p>
+                    <p>핸드폰번호 <span>*</span></p>
                     <div class="phone">
                     <select class="hp" name="hp1"> 
                         <option value='010'<?if($hp1=='010') echo 'selected';?>>010</option>
@@ -153,7 +179,7 @@
                 - <input type="text" class="hp" name="hp2" value="<?= $hp2 ?>"> - 
                 <input type="text" class="hp" name="hp3" value="<?= $hp3 ?>"></div></li>
                 <li>
-                    <p>이메일<span>(필수)</span></p>
+                    <p>이메일<span>*</span></p>
                     <div class="email">
                     <input type="text" id="email1" name="email1" value="<?= $email1 ?>"> @ <input type="text" name="email2" 
                         value="<?= $email2 ?>"></div>

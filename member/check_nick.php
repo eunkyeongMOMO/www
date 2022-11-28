@@ -4,9 +4,29 @@
    @extract($_GET);
    @extract($_SESSION);
 
+   
+   // $nick = $_POST['nick'];
+
+
    if(!$nick) 
    {
-      echo("닉네임을 입력하세요.");
+      echo "
+         <span class='fail'>닉네임을 입력하세요.</span>
+         <script>
+             $('#nick').parent().parent('tr').removeClass('success');
+             $('#nick').parent().parent('tr').addClass('fail');
+         </script>
+      ";
+   }
+   else if(strpos($nick, ' ') !== false)
+   {
+       echo "
+         <span class='fail'>공백을 포함하지 않은 닉네임을 입력하세요.</span>
+         <script>
+             $('#nick').parent().parent('tr').removeClass('success');
+             $('#nick').parent().parent('tr').addClass('fail');
+         </script>
+       ";
    }
    else
    {
@@ -20,14 +40,25 @@
       if ($num_record)
       {
        
-         echo "<span style='color:red'>다른 닉네임을 사용하세요.</span>";
+         echo "
+            <span class='fail'>다른 닉네임을 사용하세요.</span>
+            <script>
+                $('#nick').parent().parent('tr').removeClass('success');
+                $('#nick').parent().parent('tr').addClass('fail');
+            </script>
+         ";
       }
       else
       {
-         echo "<span style='color:green'>사용가능한 닉네입니다.</span>";
+         echo "
+            <span class='success'>사용가능한 닉네입니다.</span>
+            <script>
+                $('#nick').parent().parent('tr').removeClass('fail');
+                $('#nick').parent().parent('tr').addClass('success');
+            </script>
+         ";
       }
 		 
       mysql_close();
    }
 ?>
-

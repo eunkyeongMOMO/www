@@ -7,14 +7,16 @@
 #content #view_title li:nth-of-type(4){width: 20%;}
 #content #view_content{padding: 50px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; 
 margin-bottom: 30px;}
-
+.view_img{display: block; margin: 20px auto;}
 .ripple_writer_title{border-bottom: 1px solid #eee; padding: 30px;}
 .ripple_writer_title:nth-of-type(even){background: #efefef;}
 .ripple_writer_title .ripple_top{display: flex; justify-content: flex-start;}
 .ripple_writer_title .ripple_top li{ margin-right:10px;}
-.ripple_writer_title .ripple_conten{display: flex; justify-content: space-between; align-items: flex-start;}
-.ripple_writer_title .ripple_conten a{ display: block; background: #1b4aa0; border-radius: 5px; color: #fff;
+.ripple_writer_title .ripple_content{display: flex; justify-content: space-between; align-items: flex-start;}
+.ripple_writer_title .ripple_content a{ display: block; background: #1b4aa0; border-radius: 5px; color: #fff;
 padding: 15px 30px;}
+
+
 .ripple_box{width: 100%; margin-bottom: 50px;}
 .ripple_box form{display: flex; width: 90%; margin: 20px auto; justify-content: space-between; align-items:center;}
 .ripple_box form label {width: 10%; color: #1b4aa0;}

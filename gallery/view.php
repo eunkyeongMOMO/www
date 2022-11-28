@@ -158,7 +158,7 @@
 			$img_name = "./data/".$img_name;
 			$img_width = $image_width[$i];
 			
-			echo "<img src='$img_name' width='$img_width'>";
+			echo "<img class='view_img' src='$img_name' width='$img_width' style='display: block; margin: 10px auto'>";
 		}
 	}
 ?>

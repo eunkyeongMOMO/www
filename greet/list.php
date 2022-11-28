@@ -120,6 +120,7 @@
 		</div>
 
 		<div id="list_content">
+		<div class="notice_list">
 <?		
    for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)                    
    {
@@ -145,6 +146,8 @@
 			<ul id="list_item">
 				<li><?= $number ?></li>
 				<li><a href="view.php?num=<?=$item_num?>&page=<?=$page?>&scale=<?=$scale?>"><?= $item_subject ?></a></li>
+		
+				
 				<li><?= $item_nick ?></li>
 				<li><?= $item_date ?></li>
 				<li><?= $item_hit ?></li>
@@ -153,6 +156,7 @@
    	   $number--;
    }
 ?>
+</div>
 			<div id="page_button">
 				<div id="page_num"> 
 					<span>이전</span>
