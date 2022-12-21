@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코오롱글로벌-회원정보수정</title>
+    <title>코오롱글로벌 - 회원정보수정</title>
     <link rel="stylesheet" href="../common/css/common.css">
 	<link rel="stylesheet" href="./css/member_modify.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
@@ -20,6 +20,7 @@
 <script>
 
 $(document).ready(function() {
+    //닉네임 중복검사
      $("#nick").keyup(function() {    
             var nick = $('#nick').val();
 
@@ -50,6 +51,9 @@ $(document).ready(function() {
         });
 
     });
+
+    </script>
+    <script>
    function check_input()
         {
             if (!document.member_form.pass.value)
@@ -103,6 +107,8 @@ $(document).ready(function() {
 
             document.member_form.submit();
         }
+
+ //다시 작성
    function reset_form()
    {
       document.member_form.id.value = "";
@@ -150,24 +156,35 @@ $(document).ready(function() {
             <a class="logo" href="../index.html"><img src="../common/images/logocolor.png" alt=""></a> 
             <h2>회원정보 수정</h2>
         </div>
-			<ul>
-                <li class="id"><p>아이디</p>
-                   <span> <?= $row[id] ?></span></li>
-                <li><p>비밀번호<span>*</span></p>
-                    <input type="password" name="pass" value=""></li>
-                <li><p>비밀번호 확인<span>*</span></p>
-                    <input type="password" name="pass_confirm" value=""></li>
+        <table>
+            <caption class="hidden">회원정보 수정</caption>
+                <tr class="id">
+                    <th>아이디</th>
+                   <td>
+                     <?= $row[id] ?></td>
+                    </tr>
+                <tr><th>비밀번호<span>*</span></th>
+                    <td><input type="password" name="pass" value=""></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인<span>*</span></th>
+                <td><input type="password" name="pass_confirm" value="">
                     <div class="notice_txt" id="loadtext_pass_confirm"></div>
-                    <li><p>이름 <span>*</span></p>
-                    <input type="text" name="name" value="<?= $row[name] ?>"></li>
-                <li><p>닉네임 <span>*</span></p>   
-                    <div id="nick"> 
-                        <input type="text" name="nick" value="<?= $row[nick] ?>">
+                </td>
+                </tr>
+                <tr><th>이름 <span>*</span></th>
+                <td> <input type="text" name="name" value="<?= $row[name] ?>"></td>
+                </tr>
+                <tr>
+                    <th>닉네임 <span>*</span></th>   
+                    <td> 
+                        <input type="text" name="nick"id="nick" value="<?= $row[nick] ?>">
                         <div class="notice_txt" id="loadtext2"></div>
-                    </div></li>
-                <li>
-                    <p>핸드폰번호 <span>*</span></p>
-                    <div class="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <th>핸드폰번호 <span>*</span></th>
+                    <td class="phone">
                     <select class="hp" name="hp1"> 
                         <option value='010'<?if($hp1=='010') echo 'selected';?>>010</option>
                         <option value='011'<?if($hp1=='011') echo 'selected';?>>011</option>
@@ -177,14 +194,17 @@ $(document).ready(function() {
                         <option value='019'<?if($hp1=='019') echo 'selected';?>>019</option>
                 </select>
                 - <input type="text" class="hp" name="hp2" value="<?= $hp2 ?>"> - 
-                <input type="text" class="hp" name="hp3" value="<?= $hp3 ?>"></div></li>
-                <li>
-                    <p>이메일<span>*</span></p>
-                    <div class="email">
-                    <input type="text" id="email1" name="email1" value="<?= $email1 ?>"> @ <input type="text" name="email2" 
-                        value="<?= $email2 ?>"></div>
-                </li>
-			</ul>
+                <input type="text" class="hp" name="hp3" value="<?= $hp3 ?>">
+</td></tr>
+                <tr>
+                    <th>이메일<span>*</span></th>
+                    <td class="email">
+                    <input type="text" id="email1" name="email1" value="<?= $email1 ?>"> @ 
+                    <input type="text" name="email2" 
+                        value="<?= $email2 ?>">
+                    </td>
+                </tr>
+			</table>
 		<div id="button">
             <a href="#" onclick="check_input()">저장하기</a>
 		    <a href="#" onclick="reset_form()">다시쓰기</a>

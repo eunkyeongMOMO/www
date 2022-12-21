@@ -5,25 +5,21 @@ body{background:#efefef;}
     background: #fff; box-shadow: 3px 3px 7px 5px rgba(0,0,0,0.05);
 padding: 50px 0; }  
 #content h2{ text-align: center; font-size: 1.25rem; margin-bottom: 30px;}
-#content form{ width: 80%; margin: 30px auto;}
-#content form p{margin-bottom: 10px;}
+#content form{ width: 90%; margin: 30px auto; }
+#content form th{margin-bottom: 10px; display: block; text-align: start;}
 #content form .id{ display: flex; justify-content:flex-start; align-items: center;} 
-#content form .id p{margin-bottom: 0;}
+#content form .id th{margin-right: 15px; margin-bottom: 0;}
 #content form .id span{font-size: 1.25rem; color: #1b4a9f; display: block; margin-left: 20px;}
-#content form input, select{width: 100%; padding: 10px; border: 1px solid #eee;}
-#content form p span{color:#ff1d1d; font-size: .75rem; display: inline-block; margin-left: 5px;}
-#content form li{position: relative; margin-bottom: 30px;}
+#content form input, select{width: 630px; padding: 15px; border-radius: 5px; border: 1px solid #eee;margin: 5px auto;}
+#content form th span{color:#ff1d1d; font-size: .75rem; display: inline-block; margin-left: 5px;}
+#content form tr{ margin-bottom: 20px; display: block;}
 #content form .phone{display: flex; justify-content: space-between; align-items: center;}
-#content form .phone input,#content form .phone select{width: 28%;}
+#content form .phone input,#content form .phone select{width: 180px;}
 #content form .email{display: flex; justify-content: space-between; align-items: center;}
-#content form .email input{ width: 45%;}
+#content form .email input{ width: 300px;}
 #content tr td .notice_txt .fail{color:#ff3a3a; }
 #content tr td .notice_txt .success{color:#007dfa; }
 #content tr td .notice_txt{ margin: 5px 0 5px 10px; font-size: .75rem;}
-#content form #nick a{ padding: 10px 20px; margin-left: 10px; font-size: .75rem;
-     display: inline-block; background: #1b4a9f; color: #fff; border-radius: 5px;}
-#content form li::after{content: ''; width: 100%; position: absolute; left: 0; bottom: -15px;
-    height: 1px; display: block; background: #1b4a9f; }
 input:focus, select:focus {outline: none !important; border: 1px solid #1b4a9f;}
 #content #button {display: flex; justify-content: space-between; align-items: center;}
 #content #button a{display: flex; justify-content: center; align-items: center; 

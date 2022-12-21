@@ -1,5 +1,9 @@
 <? 
 	session_start(); 
+    
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +52,7 @@ $("#nick").keyup(function() {    // id입력 상자에 id값 입력시
     });
 });		 
 
+//pass_confirm
 $("#pass_confirm").keyup(function(){
             
             if($('#pass').val() == $('#pass_confirm').val()){
