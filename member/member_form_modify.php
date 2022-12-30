@@ -1,6 +1,5 @@
 <?
     session_start();
-
     @extract($_POST);
     @extract($_GET);
     @extract($_SESSION);
@@ -18,7 +17,6 @@
     <script src="./js/jquery-migrate-1.4.1.min.js"></script>
 	
 <script>
-
 $(document).ready(function() {
     //닉네임 중복검사
      $("#nick").keyup(function() {    
@@ -88,14 +86,12 @@ $(document).ready(function() {
                 document.member_form.nick.focus();
                 return;
             }
-
             if (!document.member_form.hp2.value || !document.member_form.hp3.value )
             {
                 alert("휴대폰 번호를 입력하세요");    
                 document.member_form.nick.focus();
                 return;
             }
-
             if (document.member_form.pass.value != 
                     document.member_form.pass_confirm.value)
             {

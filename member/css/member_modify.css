@@ -1,30 +1,27 @@
-body{background:#efefef;}
-.logo{margin: 50px auto 30px; display: block; width: 250px;}
-.logo img{width: 100%;}
-#content{width: 700px; margin: 30px auto; 
-    background: #fff; box-shadow: 3px 3px 7px 5px rgba(0,0,0,0.05);
-padding: 50px 0; }  
-#content h2{ text-align: center; font-size: 1.25rem; margin-bottom: 30px;}
-#content form{ width: 90%; margin: 30px auto; }
-#content form th{margin-bottom: 10px; display: block; text-align: start;}
-#content form .id{ display: flex; justify-content:flex-start; align-items: center;} 
-#content form .id th{margin-right: 15px; margin-bottom: 0;}
-#content form .id span{font-size: 1.25rem; color: #1b4a9f; display: block; margin-left: 20px;}
-#content form input, select{width: 630px; padding: 15px; border-radius: 5px; border: 1px solid #eee;margin: 5px auto;}
-#content form th span{color:#ff1d1d; font-size: .75rem; display: inline-block; margin-left: 5px;}
-#content form tr{ margin-bottom: 20px; display: block;}
-#content form .phone{display: flex; justify-content: space-between; align-items: center;}
-#content form .phone input,#content form .phone select{width: 180px;}
-#content form .email{display: flex; justify-content: space-between; align-items: center;}
-#content form .email input{ width: 300px;}
-#content tr td .notice_txt .fail{color:#ff3a3a; }
-#content tr td .notice_txt .success{color:#007dfa; }
-#content tr td .notice_txt{ margin: 5px 0 5px 10px; font-size: .75rem;}
-input:focus, select:focus {outline: none !important; border: 1px solid #1b4a9f;}
-#content #button {display: flex; justify-content: space-between; align-items: center;}
-#content #button a{display: flex; justify-content: center; align-items: center; 
-    width: 48%; padding: 10px;border-radius: 5px; transition: all .5s ease;}
-#content #button a:nth-of-type(1){border: 1px solid #1b4a9f; color: #1b4a9f;}
-#content #button a:nth-of-type(1):hover{background: #1b4a9f; color: #fff;}
-#content #button a:nth-of-type(2){border: 1px solid #666; color: #666;}
-#content #button a:nth-of-type(2):hover{background: #666; color: #fff;}
+body { background:#efefef; } 
+.logo { margin: 50px auto 30px; display: block; width: 250px; } 
+.logo img { width: 100%; } 
+#content { width: 700px; margin: 30px auto; background: #fff; box-shadow: 3px 3px 7px 5px rgba(0,0,0,0.05);padding: 50px 0; } 
+#content h2 { text-align: center; font-size: 1.25rem; margin-bottom: 30px; } 
+#content form { width: 90%; margin: 30px auto; } 
+#content form th { margin-bottom: 10px; display: block; text-align: start; } 
+#content form .id { display: flex; justify-content:flex-start; align-items: center; } 
+#content form .id th { margin-right: 15px; margin-bottom: 0; } 
+#content form .id span { font-size: 1.25rem; color: #1b4a9f; display: block; margin-left: 20px; } 
+#content form input, select { width: 630px; padding: 15px; border-radius: 5px; border: 1px solid #eee; margin: 5px auto; } 
+#content form th span { color:#ff1d1d; font-size: .75rem; display: inline-block; margin-left: 5px; } 
+#content form tr { margin-bottom: 20px; display: block; } 
+#content form .phone { display: flex; justify-content: space-between; align-items: center; } 
+#content form .phone input,#content form .phone select { width: 180px; } 
+#content form .email { display: flex; justify-content: space-between; align-items: center; } 
+#content form .email input { width: 300px; } 
+#content tr td .notice_txt .fail { color:#ff3a3a; } 
+#content tr td .notice_txt .success { color:#007dfa; } 
+#content tr td .notice_txt { margin: 5px 0 5px 10px; font-size: .75rem; } 
+input:focus, select:focus { outline: none !important; border: 1px solid #1b4a9f; } 
+#content #button { display: flex; justify-content: space-between; align-items: center; } 
+#content #button a { display: flex; justify-content: center; align-items: center; width: 48%; padding: 10px; border-radius: 5px; transition: all .5s ease; } 
+#content #button a:nth-of-type(1) { border: 1px solid #1b4a9f; color: #1b4a9f; } 
+#content #button a:nth-of-type(1):hover { background: #1b4a9f; color: #fff; } 
+#content #button a:nth-of-type(2) { border: 1px solid #666; color: #666; } 
+#content #button a:nth-of-type(2):hover { background: #666; color: #fff; } 

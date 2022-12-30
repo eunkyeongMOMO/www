@@ -1,6 +1,5 @@
 <? 
 	session_start(); 
-    
     @extract($_POST);
     @extract($_GET);
     @extract($_SESSION);
@@ -16,10 +15,8 @@
 	<link rel="stylesheet" href="./css/member_form.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-migrate-1.4.1.min.js"></script>
-	
 	<script>
 	 $(document).ready(function() {
-   
  //id 중복검사
  $("#id").keyup(function() {    // id입력 상자에 id값 입력시
     var id = $('#id').val(); //aaa
