@@ -58,7 +58,8 @@ section:nth-child(1) { background:url(../img/main_back.jpg); position:relative; 
 .main .deco_text { font-size: 4rem; font-weight: 900; font-style: italic; position:absolute; -webkit-text-stroke:1px #392ef2; color: #fff; z-index: 5; font-family: 'Playfair Display', serif; } 
 .main .deco_text:nth-of-type(1) { right: 10%; top: 130px } 
 .main .deco_text:nth-of-type(2) { left: 10%; bottom: 130px; } 
-.main .deco_text::after { display: block; font-size: 4rem; font-weight: 900; color: #392ef2; font-style: italic; position: absolute; top: -10px; font-family: 'Playfair Display', serif; } 
+.main .deco_text::after { display: block; font-size: 4rem; font-weight: 900; color: #392ef2; 
+    font-style: italic; position: absolute; top: -10px; font-family: 'Playfair Display', serif; } 
 .main .deco_text:nth-of-type(1)::after { content: 'Developer'; right: 10px; } 
 .main .deco_text:nth-of-type(2)::after { content: 'Disgner'; left: 10px; } 
 
@@ -70,7 +71,7 @@ section:nth-child(1) { background:url(../img/main_back.jpg); position:relative; 
 .profile_left .img_box { position: absolute; top:0; right: 0;; width: 80%; height: 100%; overflow: hidden; } 
 .profile_left .img_box img { width: 100%; } 
 .profile_right { height: 100%; width: 50%; background: #392ef2; color:#fff; } 
-.profile_right p { font-size: 3rem; font-style: italic; font-family: 'Playfair Display', serif; color:#fff; opacity: .7; margin: 100px 30px 30px; text-align: end; } 
+.profile_right p { font-size: 2rem; font-style: italic; font-family: 'Playfair Display', serif; color:#fff; opacity: .7; margin: 100px 30px 30px; text-align: end; } 
 .profile_right:hover p { opacity: 1; } 
 .profile_right dl { width: 80%; margin: 10px auto; padding-bottom: 15px; border-bottom: 1px solid #fff; } 
 .profile_right>dl:nth-of-type(1) { margin-top: 50px; } 
@@ -214,10 +215,10 @@ section:nth-child(1) { background:url(../img/main_back_640.jpg) center no-repeat
  .main_text span::after { content: "NEEDS에 맞춘 결과, 책임을 갖고 임하겠습니다."; position: absolute; bottom: 15px; left: 55%; transform: translateX(-50%); margin: 0 auto; height: 13%; color: #fff; overflow: hidden; border-right: 1px solid #fff; animation: typing3 5s steps(30) forwards; } 
  @keyframes typing3 {0% { width: 0%; } 100% { width: 120%; }} 
  .profile { display: block; width: 100%; } 
- .profile_left { width: 100%; height: 45%; } 
- .profile_left p { left: 30px; bottom:50px; font-size: 3rem; } 
- .profile_left p::after { font-size: 3rem; } 
- .profile_right { width: 100%; height: 55%; } 
+ .profile_left { width: 100%; height: 40%; } 
+ .profile_left p { left: 30px; bottom:50px; font-size: 2.5rem; } 
+ .profile_left p::after { font-size: 2.5rem; } 
+ .profile_right { width: 100%; height: 60%; } 
  .profile_right p { display: none; } 
  .profile_right dl { width: 90%; padding: 10px 0; } 
  .profile_right>dl:nth-of-type(1) { padding-top: 20px; } 
