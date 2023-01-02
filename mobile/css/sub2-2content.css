@@ -1,16 +1,14 @@
-.main{background: url(../images/sub2/sub2_visual.jpg) center no-repeat; background-size: cover;}
-/* .subnav ul{left: -100px;} */
-#content .content_area .summary p span{color: #3567fe; font-weight: 500;}
+.main { background: url(../images/sub2/sub2_visual.jpg) center no-repeat; background-size: cover; } 
+/* .subnav ul { left: -100px; } */
+#content .content_area .summary p span { color: #3567fe; font-weight: 500; } 
 
-#content .certification{width: 96%; margin: 20px auto 30px; text-align: start;}
-#content .certification>img{ width: 100%; height: 150px; border-radius: 20px; margin-bottom: 20px;}
-#content .certification p{ width: 90%;margin: 0 auto;}
-#content .certification p:nth-of-type(1){font-weight: 700; font-size: 1.495rem; margin-bottom: 20px;}
-#content .certification p:nth-of-type(2){ font-weight: 400; line-height: 2rem;}
-#content .certification div{position: relative; text-align: center; margin-top: 20px;}
-#content .certification a{ background: #fff; padding: 10px; color: #3567fe; font-weight: 500; font-size: 1.3rem;}
-#content .certification div:nth-of-type(1):after{content:'';
-     position: absolute; top:50%; left:0; width: 100%; height: 1px; z-index: -1;
-     background: #3567fe; display: block;}
-#content .certification .box{width: 90%; margin: 20px auto; display: none;}
-#content .certification .box img{width: 100%;}
+#content .certification { width: 96%; margin: 20px auto 30px; text-align: start; } 
+#content .certification>img { width: 100%; height: 150px; border-radius: 20px; margin-bottom: 20px; } 
+#content .certification p { width: 90%; margin: 0 auto; } 
+#content .certification p:nth-of-type(1) { font-weight: 700; font-size: 1.495rem; margin-bottom: 20px; } 
+#content .certification p:nth-of-type(2) { font-weight: 400; line-height: 2rem; } 
+#content .certification div { position: relative; text-align: center; margin-top: 20px; } 
+#content .certification a { background: #fff; padding: 10px; color: #3567fe; font-weight: 500; font-size: 1.3rem; } 
+#content .certification div:nth-of-type(1):after { content:''; position: absolute; top:50%; left:0; width: 100%; height: 1px; z-index: -1; background: #3567fe; display: block; } 
+#content .certification .box { width: 90%; margin: 20px auto; display: none; } 
+#content .certification .box img { width: 100%; } 

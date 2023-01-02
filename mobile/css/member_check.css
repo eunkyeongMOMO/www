@@ -1,68 +1,30 @@
-body{background:#efefef;}
-.logo{margin: 150px auto 0; display: block; width: 250px; text-align: center;}
-.logo img{width: 100%;}
-#content{width: 100%; margin: 30px auto;}  
-.member_tab{padding: 30px 0;border-top: 1px solid #333;}
-.member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
-.member_tab a.on{color: #fff;border-bottom: 2px solid #333;font-weight: bold}
-.member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #fff;font-weight: bold}
+body { background:#efefef; } 
+.logo { margin: 150px auto 0; display: block; width: 250px; text-align: center; } 
+.logo img { width: 100%; } 
+#content { width: 100%; margin: 30px auto; } 
+.member_tab { padding: 30px 0; border-top: 1px solid #333; } 
+.member_tab a { font-size: 24px; padding: 10px; margin: 0 10px; color: #aaa; } 
+.member_tab a.on { color: #fff; border-bottom: 2px solid #333; font-weight: bold } 
+.member_tab span { font-size: 24px; padding: 10px; margin: 0 10px; color: #fff; font-weight: bold } 
 
-.join{text-align: left; position: relative;}
-    
-.sub_cont_wrap{width: 80%; margin: 50px auto 150px; 
-        text-align: center; padding: 70px 0; 
-         background: #fff; box-shadow: 3px 3px 7px 5px rgba(0,0,0,0.05);}
-.join h4{width: 70%; margin: 20px auto; position: relative; font-weight: 500;}
-.join h4 span{ color: #db0000; font-size: 0.75rem; font-weight: 100; display: inline-block; margin-left: 5px;}
-.join h4::after{content: ''; width: 100%; height: 1px;
-        background: #aaa; position: absolute; left: 0; bottom: -10px;}
-.join h3{text-align: center; font-size: 1.5rem; 
-        margin: 0 auto 30px; font-weight: 700; color: #666;}
-
-.join .policy{overflow-y:scroll; padding: 20px;
-        width: 80%; margin: 30px auto 50px; height: 120px;}
-.join .check{text-align: end; width: 80%; margin: 30px auto 50px;}
-.join .button{width: 90%; display: block; align-items: center; margin: 20px auto;
-        justify-content: space-between;}
-.join .button .ok,.join .button button,.join .allcheck{width: 100%; padding: 10px;
-         font-weight: 700; font-size: 1rem; border: 1px solid #1b4a9f;color: #1b4a9f;
-        display: block; text-align: center; transition: all .5s ease; margin-bottom: 20px;}
-.join .button .cancel{color: #333; background: #fff;border: 1px solid #333;}
-    .join .button .cancel:hover{color:#fff; background: #333; }
-    .join .allcheck{background: #1b4a9f; color: #fff;}
-    .join .button .ok:hover{background: #1b4a9f; color: #fff;}
+.join { text-align: left; position: relative; } 
  
-    input[type=checkbox] {
-        display: none;
-    }
-    input[type=checkbox] + label {
-        cursor: pointer;
-        position: relative;
+.sub_cont_wrap { width: 80%; margin: 50px auto 150px; text-align: center; padding: 70px 0; background: #fff; box-shadow: 3px 3px 7px 5px rgba(0,0,0,0.05); } 
+.join h4 { width: 70%; margin: 20px auto; position: relative; font-weight: 500; } 
+.join h4 span { color: #db0000; font-size: 0.75rem; font-weight: 100; display: inline-block; margin-left: 5px; } 
+.join h4::after { content: ''; width: 100%; height: 1px; background: #aaa; position: absolute; left: 0; bottom: -10px; } 
+.join h3 { text-align: center; font-size: 1.5rem; margin: 0 auto 30px; font-weight: 700; color: #666; } 
 
-    }
-    input[type=checkbox] + label::before {
-        content: '';
-        width: 30px;
-        height: 30px; 
-        border: 1px solid #eee;
-        border-radius: 10px;
-        display: inline-block;
-        position: absolute;
-        top:-7px; left: -40px;
-
-    }
-    input[type=checkbox]:checked + label::before {
-        content:'✔';
-        font-size: 1.2rem;
-        width: 30px;
-        height: 30px; 
-        text-align: center;
-        position: absolute;
-        left: -40px;
-        top:-7px;
-        color: #fff;
-        border-radius: 10px;
-        background: #1b4a9f;
-        border: 1px solid #1b4a9f;
-
-    }
+.join .policy { overflow-y:scroll; padding: 20px; width: 80%; margin: 30px auto 50px; height: 120px; } 
+.join .check { text-align: end; width: 80%; margin: 30px auto 50px; } 
+.join .button { width: 90%; display: block; align-items: center; margin: 20px auto; justify-content: space-between; } 
+.join .button .ok,.join .button button,.join .allcheck { width: 100%; padding: 10px; font-weight: 700; font-size: 1rem; border: 1px solid #1b4a9f; color: #1b4a9f; display: block; text-align: center; transition: all .5s ease; margin-bottom: 20px; } 
+.join .button .cancel { color: #333; background: #fff; border: 1px solid #333; } 
+ .join .button .cancel:hover { color:#fff; background: #333; } 
+ .join .allcheck { background: #1b4a9f; color: #fff; } 
+ .join .button .ok:hover { background: #1b4a9f; color: #fff; } 
+ 
+ input[type=checkbox] { display: none; } 
+ input[type=checkbox] + label { cursor: pointer; position: relative;}
+ input[type=checkbox] + label::before { content: ''; width: 30px; height: 30px; border: 1px solid #eee; border-radius: 10px; display: inline-block; position: absolute; top:-7px; left: -40px;}
+ input[type=checkbox]:checked + label::before { content:'✔'; font-size: 1.2rem; width: 30px; height: 30px; text-align: center; position: absolute; left: -40px; top:-7px; color: #fff; border-radius: 10px; background: #1b4a9f; border: 1px solid #1b4a9f;}

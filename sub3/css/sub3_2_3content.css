@@ -1,5 +1,5 @@
-#content .content_area>img {opacity: 0;} 
-#content .summary {text-align: start; width: 1200px; margin: 0 auto; opacity: 0;} 
+#content .content_area>img { opacity: 0; } 
+#content .summary { text-align: start; width: 1200px; margin: 0 auto; opacity: 0; } 
 #content .summary span { color:#1b4aa0; font-weight: 700; font-family:'Roboto', sans-serif; font-size: 5em; display: block; margin:50px 0; } 
 #content .summary p { white-space: pre-line; font-size: 1.5em; line-height: 2em; } 
 
@@ -32,7 +32,7 @@
 #content .safety_con01 dt { font-size: 1.75em; font-weight: 700; color: #fff; margin-bottom: 30px; } 
 #content .safety_con01 dd { white-space: pre-line; color: #fff; line-height: 2em; font-size: .75em; } 
 
-#content .safety_con02 {opacity: 0; width: 1400px; position: relative; padding-top: 50px; margin: 0 auto 200px; } 
+#content .safety_con02 { opacity: 0; width: 1400px; position: relative; padding-top: 50px; margin: 0 auto 200px; } 
 #content .safety_con02 .item_list { width: 6300px; display: flex; position:relative; flex-wrap: nowrap; } 
 #content .safety_con02 ul { position:relative; left: -870px; width: 3150px; margin: 0 auto; } 
 #content .safety_con02 li { width: 350px; margin: 50px; background:#fff; box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1); text-align: center; float: left; } 
@@ -49,13 +49,13 @@
 #content .left, .right { color:#fff; text-shadow: 3px 3px 5px rgba(0,0,0,0.2); font-size: 4em; position: absolute; transition: all .5s ease-out; bottom:35%; z-index: 3; } 
 #content .left { left: 470px; } 
 #content .right { right: 470px; } 
-#content .left:hover, .right:hover { color: #1b4aa0; }
+#content .left:hover, .right:hover { color: #1b4aa0; } 
 
-#content .content_area img.moved{animation: up 1s ease forwards;}
-#content .summary.moved{animation: up 1s ease forwards}
-#content .info.moved{animation: up 1s ease forwards}
-#content .info.moved .info_left{animation: left_on 1s ease forwards}
-#content .info.moved .info_right{animation: right_on 1s ease forwards}
-#content .safety_con01 li.moved{animation: up 1s ease forwards;}
-#content .safety_con01 li.moved:nth-of-type(even){animation-delay: .3s;}
-#content .safety_con02.moved{animation: left_on 1s ease forwards;}
+#content .content_area img.moved { animation: up 1s ease forwards; } 
+#content .summary.moved { animation: up 1s ease forwards } 
+#content .info.moved { animation: up 1s ease forwards } 
+#content .info.moved .info_left { animation: left_on 1s ease forwards } 
+#content .info.moved .info_right { animation: right_on 1s ease forwards } 
+#content .safety_con01 li.moved { animation: up 1s ease forwards; } 
+#content .safety_con01 li.moved:nth-of-type(even) { animation-delay: .3s; } 
+#content .safety_con02.moved { animation: left_on 1s ease forwards; } 

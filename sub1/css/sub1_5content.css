@@ -1,5 +1,5 @@
 #content .map_area { position: relative; width: 1200px; height: 750px; margin: 50px auto; } 
-#content #map { background: #666;; width: 1200px; height: 750px; }
+#content #map { background: #666;; width: 1200px; height: 750px; } 
 #content .map_info { width: 1000px; height:300px; background: #fff; box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.2); padding: 50px 150px; position:absolute; z-index: 2; left:50%; bottom:-200px; transform:translateX(-50%); } 
 #content .map_info dl { text-align: start; margin-left: 50px; } 
 #content .map_info dt { font-size:1.875em; font-weight: 700; color:#1b4aa0; } 
@@ -11,13 +11,13 @@
 #content .map_info a:hover::before { transform: scale(1); background: #1b4a9f; } 
 #content .map_info a > span { position: absolute; top: 7px; left: 45px; transform: translateX(0); transition: all 0.5s ease-out; } 
 #content .map_info a:hover span { color: #1b4a9f; transform: translateX(20px); } 
-#content .roadmap {margin:300px auto 150px;width:1000px } 
+#content .roadmap { margin:300px auto 150px; width:1000px } 
 #content .roadmap li { overflow: hidden; } 
 #content .roadmap div { width: 200px; height: 200px; border-radius: 50%; margin: 20px 0 50px 20px; background-color: #fff; box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.2); transition: all .5s ease-out; float: left; } 
 #content .roadmap div:hover { box-shadow: inset 2px 2px 10px 2px rgba(0,0,0,0.2); } 
 #content .roadmap img { width: 100px; margin-top: 50px; } 
-#content .roadmap dl {width: 700px;float: right;overflow: hidden; } 
-#content .roadmap dt { width: 100px; height: 30px; font-weight: 500; color: #fff; border-radius: 15px; float: left;}
+#content .roadmap dl { width: 700px; float: right; overflow: hidden; } 
+#content .roadmap dt { width: 100px; height: 30px; font-weight: 500; color: #fff; border-radius: 15px; float: left; } 
 #content .roadmap dd { float: right; width: 570px; text-align: start; } 
 #content .road_bus { margin-bottom: 100px; } 
 #content .road_bus dt { margin:10px 30px 70px 0; background-color: #e2071c; } 
@@ -27,7 +27,7 @@
 #content .road_bus p { color:#666; } 
 #content .road_bus span:nth-of-type(2) { color:#999; display: block; } 
 #content .road_subway dl:nth-of-type(1) { margin-top: 50px; } 
-#content .road_subway dt { width: 150px; background-color: #57a5f3; margin: 5px 30px 50px 0}
+#content .road_subway dt { width: 150px; background-color: #57a5f3; margin: 5px 30px 50px 0 } 
 #content .road_subway dd { width: 520px; } 
 #content .road_subway dd span { font-weight: 700; } 
 #content .road_subway p span { color: #57a5f3; } 

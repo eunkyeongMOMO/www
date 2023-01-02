@@ -1,20 +1,14 @@
-#content .summary span{font-size: 2.875em; color: #1b4aa0; font-weight: 700;
-display: block; margin: 30px auto 10px;}
-#content .summary p:nth-of-type(1) {font-size: 1.5em; font-weight: 500; margin-bottom: 20px;}
-#content .summary p:nth-of-type(2){font-size: 1.25em; font-weight: 400; margin-bottom: 50px; color: #666;}
+#content .summary span { font-size: 2.875em; color: #1b4aa0; font-weight: 700;display: block; margin: 30px auto 10px; } 
+#content .summary p:nth-of-type(1) { font-size: 1.5em; font-weight: 500; margin-bottom: 20px; } 
+#content .summary p:nth-of-type(2) { font-size: 1.25em; font-weight: 400; margin-bottom: 50px; color: #666; } 
 
-#content #mailAddress{ width: 1200px; margin: 0 auto 150px;}
-#content #mailAddress form{}
+#content #mailAddress { width: 1200px; margin: 0 auto 150px; } 
+#content #mailAddress form { } 
 
-#content #mailAddress form li dt{text-align: start; margin:0 auto 20px; width: 80%;}
-#content #mailAddress form li label{ font-size: 1.15rem; color: #1b4aa0;}
-#content #mailAddress form li input{border: 1px solid #ddd; 
-    width: 80%; height: 60px; margin:0 auto 40px;
-padding-left: 40px; font-weight: 500;}
-#content #mailAddress form li textarea{border: none; width: 80%;border: 1px solid #ddd; 
-    width: 80%; height: 180px; margin:0 auto 20px; padding-top: 30px;
-padding-left: 40px; font-weight: 500;}
-#content #mailAddress form li:nth-last-of-type(1) input{ width: 30%; font-size: 1.15rem; margin: 30px auto; color: #1b4aa0;
-    padding-left: 0; background: #fff; border: 1px solid #1b4aa0; transition: all .5s ease;}
+#content #mailAddress form li dt { text-align: start; margin:0 auto 20px; width: 80%; } 
+#content #mailAddress form li label { font-size: 1.15rem; color: #1b4aa0; } 
+#content #mailAddress form li input { border: 1px solid #ddd; width: 80%; height: 60px; margin:0 auto 40px;padding-left: 40px; font-weight: 500; } 
+#content #mailAddress form li textarea { border: none; width: 80%; border: 1px solid #ddd; width: 80%; height: 180px; margin:0 auto 20px; padding-top: 30px;padding-left: 40px; font-weight: 500; } 
+#content #mailAddress form li:nth-last-of-type(1) input { width: 30%; font-size: 1.15rem; margin: 30px auto; color: #1b4aa0; padding-left: 0; background: #fff; border: 1px solid #1b4aa0; transition: all .5s ease; } 
 
-    #content #mailAddress form li:nth-last-of-type(1) input:hover{background: #1b4aa0; color: #fff;}
+ #content #mailAddress form li:nth-last-of-type(1) input:hover { background: #1b4aa0; color: #fff; } 

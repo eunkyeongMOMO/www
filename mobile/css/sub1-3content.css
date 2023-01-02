@@ -1,5 +1,5 @@
-.main{background: url(../images/sub1/sub1_visual.jpg) center no-repeat;  background-size: cover;}
-/* .subnav ul{left: -200px;} */
+.main { background: url(../images/sub1/sub1_visual.jpg) center no-repeat; background-size: cover; } 
+/* .subnav ul { left: -200px; } */
 #content .content_area>p { width: 85%; margin: 20px auto 0; white-space: pre-line; font-size: 1.143em; line-height: 2rem; white-space: pre-line; } 
 #content .content_area>p span { color:#3678fe; font-weight: 700; } 
 
@@ -8,13 +8,11 @@
 .st1 { fill:#3FA9F5; stroke:#DDDDDD; stroke-width:0.281; stroke-miterlimit:10; } 
 .st2 { fill:#1c6fff; } 
 #content .net_road { width: 90%; margin: 0 auto 30px; text-align: start; } 
-#content .net_road li .tab{font-size: 1.429rem; font-weight: 700;margin-top: 20px; display: block;} 
-#content .net_road li dl{display: none;} 
-#content .net_road dt { width: 100%; font-size: 1.5rem; font-weight: 100; padding-bottom: 15px; 
-    border-bottom:1px solid #999; margin-top: 20px; position:relative; } 
-#content .net_road dt::after { content:''; display: block; width: 0px; height: 1px; background: #3678fe;
-     position: absolute; left: 0; bottom: 0; z-index: 2; } 
-#content .net_road dd { margin-top: 20px; white-space: pre-line;} 
-#content .net_road dd span:nth-of-type(1) { font-weight:400; color:#1c6fff; font-size: 1.143rem; display: block;} 
-#content .net_road dd svg { display: inline-block; color: #999;  margin:0 10px;} 
+#content .net_road li .tab { font-size: 1.429rem; font-weight: 700; margin-top: 20px; display: block; } 
+#content .net_road li dl { display: none; } 
+#content .net_road dt { width: 100%; font-size: 1.5rem; font-weight: 100; padding-bottom: 15px; border-bottom:1px solid #999; margin-top: 20px; position:relative; } 
+#content .net_road dt::after { content:''; display: block; width: 0px; height: 1px; background: #3678fe; position: absolute; left: 0; bottom: 0; z-index: 2; } 
+#content .net_road dd { margin-top: 20px; white-space: pre-line; } 
+#content .net_road dd span:nth-of-type(1) { font-weight:400; color:#1c6fff; font-size: 1.143rem; display: block; } 
+#content .net_road dd svg { display: inline-block; color: #999; margin:0 10px; } 
 #content .tell { display: inline-block; color: #666; } 

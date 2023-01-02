@@ -17,5 +17,5 @@
 #content .content01 dd { font-weight: 400; margin-bottom: 5px; } 
 #content .content01 dd span { font-weight: 500; margin-right: 15px; display: inline-block; } 
 
-#content .summary.moved div{animation: up 1s ease forwards;}
-#content .content01 li.moved{animation: up 1s ease forwards;}
+#content .summary.moved div { animation: up 1s ease forwards; } 
+#content .content01 li.moved { animation: up 1s ease forwards; } 

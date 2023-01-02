@@ -1,18 +1,13 @@
-.main{background: url(../images/sub4/sub4_visual.jpg) center no-repeat; background-size: cover;}
-/* .subnav ul{left: -100px;} */
-#content .title_area p{ width: 70%; margin: 30px auto 40px; line-height: 1.7rem;}
+.main { background: url(../images/sub4/sub4_visual.jpg) center no-repeat; background-size: cover; } 
+/* .subnav ul { left: -100px; } */
+#content .title_area p { width: 70%; margin: 30px auto 40px; line-height: 1.7rem; } 
 
-#content .tbl_wap table{width: 90%; border-top: 2px solid #333; margin:30px auto 20px;}
+#content .tbl_wap table { width: 90%; border-top: 2px solid #333; margin:30px auto 20px; } 
 
-#content .tbl_wap table tr{border-bottom: 1px solid #666; height: 50px;}
-#content .tbl_wap table th{font-weight: 500;}
-#content .tbl_wap table td, #content .tbl_wap table th{border-bottom: 1px solid #ddd;}
-#content .tbl_wap p{ width:90%; 
-    margin: 0 auto;color:#999; text-align: end; font-size: .524rem;}
-#content .link{position: relative; width: 100%; height: 150px; margin: 20px auto 30px; background: url(../images/sub4/sub4-2_linkimg.jpg) center no-repeat; background-size: cover;}
-#content .link p{font-weight: 500; text-align: center;
-    font-size: 1.2em; white-space: pre-line;
-   color: #fff;position: absolute;left:50%; top:50%; transform: translate(-50%,-50%);}
-#content .link a{display: block; padding: 10px 30px; 
-    border: 1px solid #fff; border-radius: 20px;
-   color: #fff;position: absolute;left:50%; top:50%; transform: translate(-50%,-50%); font-weight: 400; }
+#content .tbl_wap table tr { border-bottom: 1px solid #666; height: 50px; } 
+#content .tbl_wap table th { font-weight: 500; } 
+#content .tbl_wap table td, #content .tbl_wap table th { border-bottom: 1px solid #ddd; } 
+#content .tbl_wap p { width:90%; margin: 0 auto; color:#999; text-align: end; font-size: .524rem; } 
+#content .link { position: relative; width: 100%; height: 150px; margin: 20px auto 30px; background: url(../images/sub4/sub4-2_linkimg.jpg) center no-repeat; background-size: cover; } 
+#content .link p { font-weight: 500; text-align: center; font-size: 1.2em; white-space: pre-line; color: #fff; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); } 
+#content .link a { display: block; padding: 10px 30px; border: 1px solid #fff; border-radius: 20px; color: #fff; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); font-weight: 400; } 

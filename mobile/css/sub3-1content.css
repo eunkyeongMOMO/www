@@ -1,55 +1,38 @@
-.subnav ul{width: 96%; margin: 20px auto; left: 10px;}
-.subnav li{width: 33.33%;margin-right: 20px;}
+.subnav ul { width: 96%; margin: 20px auto; left: 10px; } 
+.subnav li { width: 33.33%; margin-right: 20px; } 
 
-.main{background: url(../images/sub3/sub3_visual.jpg)center no-repeat; background-size: cover;}
+.main { background: url(../images/sub3/sub3_visual.jpg)center no-repeat; background-size: cover; } 
 
-#content .summary h3{font-size: 1.429rem; font-weight: 700; color:#3678fe; margin: 15px auto;}
-#content .summary img{width: 100%; border-radius: 20px; margin: 20px auto;}
-#content .summary span{display: block; font-weight: 500; font-size: 1.143rem; margin-bottom: 15px;}
-#content .motors_content{display: none;}
-#content .motors_content{width: 96%; margin: 0 auto 30px;}
-#content .motors_content .shop_list{width: 96%; margin: 0 auto 20px;}
-#content .motors_content .shop_list .tab{position: relative; text-align: start;}
-#content .motors_content .shop_list .tab::after{content: ''; width: 100%; height: 1px; background: #333;
-     position: absolute; top:50%; left: 0; z-index: -1;}
-#content .motors_content .shop_list .tab a{font-weight: 500; 
-    font-size: 1.134rem; background: #fff; padding: 10px;}
-#content .motors_content .shop_list .shop_details{ text-align: start;
- margin: 10px auto; width: 90%; display: none;}
- #content .motors_content .shop_list .shop_details dl{ text-align: start; margin-bottom: 20px;}
- #content .motors_content .shop_list .shop_details dt{font-size: 1.143rem; font-weight: 500;color: #3678fe; 
-    margin-bottom: 15px;}
- #content .motors_content .shop_list .shop_details dd{white-space: pre-line; line-height: 1.5rem; width: 96%; margin: 5px auto;}
- #content .motors_content .shop_list .shop_details dd:nth-of-type(2){ font-size: .879rem;}
- #content .motors_content .shop_list .shop_details dd span{display: block; font-weight: 500; margin-bottom: 5px;}
- #content .sporex_content{display: none;}
- #content .sporex_content li{ width: 90%;margin:20px auto 30px; text-align: center;}
- #content .sporex_content li img {width: 100%; height: 200px; border-radius: 20px;}
- #content .sporex_content li p{margin: 10px auto;}
- #content .sporex_content li span{display: block; font-size: .714rem; color: #666;}
+#content .summary h3 { font-size: 1.429rem; font-weight: 700; color:#3678fe; margin: 15px auto; } 
+#content .summary img { width: 100%; border-radius: 20px; margin: 20px auto; } 
+#content .summary span { display: block; font-weight: 500; font-size: 1.143rem; margin-bottom: 15px; } 
+#content .motors_content { display: none; } 
+#content .motors_content { width: 96%; margin: 0 auto 30px; } 
+#content .motors_content .shop_list { width: 96%; margin: 0 auto 20px; } 
+#content .motors_content .shop_list .tab { position: relative; text-align: start; } 
+#content .motors_content .shop_list .tab::after { content: ''; width: 100%; height: 1px; background: #333; position: absolute; top:50%; left: 0; z-index: -1; } 
+#content .motors_content .shop_list .tab a { font-weight: 500; font-size: 1.134rem; background: #fff; padding: 10px; } 
+#content .motors_content .shop_list .shop_details { text-align: start; margin: 10px auto; width: 90%; display: none; } 
+ #content .motors_content .shop_list .shop_details dl { text-align: start; margin-bottom: 20px; } 
+ #content .motors_content .shop_list .shop_details dt { font-size: 1.143rem; font-weight: 500; color: #3678fe; margin-bottom: 15px; } 
+ #content .motors_content .shop_list .shop_details dd { white-space: pre-line; line-height: 1.5rem; width: 96%; margin: 5px auto; } 
+ #content .motors_content .shop_list .shop_details dd:nth-of-type(2) { font-size: .879rem; } 
+ #content .motors_content .shop_list .shop_details dd span { display: block; font-weight: 500; margin-bottom: 5px; } 
+ #content .sporex_content { display: none; } 
+ #content .sporex_content li { width: 90%; margin:20px auto 30px; text-align: center; } 
+ #content .sporex_content li img { width: 100%; height: 200px; border-radius: 20px; } 
+ #content .sporex_content li p { margin: 10px auto; } 
+ #content .sporex_content li span { display: block; font-size: .714rem; color: #666; } 
 
- #content .bangqlufsen_content{ display: none; overflow: hidden;}
- #content .bangqlufsen_content .logo img{ width: 100px; margin: 20px auto;}
- #content .bangqlufsen_content .logo p{margin: 15px auto; width: 70%; position: relative;}
- #content .bangqlufsen_content .logo p::after{content: ''; width: 100%; height: 1px; background: #999; position: absolute; top:-7px; left: 0;}
- #content .bangqlufsen_content .shop_list{margin: 20px auto 30px;  position: relative; width: 800%;
-    left: 0; display: flex;}
- #content .bangqlufsen_content .shop_list li{ width: 300px; margin: 15px 20px 5px; }
- #content .bangqlufsen_content .shop_list li img{width: 100%; border-radius: 20px;}
- #content .bangqlufsen_content .shop_list dl {text-align: start; width: 90%; margin: 20px auto 0;}
- #content .bangqlufsen_content .shop_list dt{ font-size: 1.143rem; font-weight: 500; margin: 10px 0;}
- #content .bangqlufsen_content .shop_list dd{ white-space: pre-line;}
- #content .bangqlufsen_content .scrollBar {
-    width: 90%;
-    height: 5px;
-    margin: 10px auto 30px;
-    border-radius:10px;
-    background: rgba(0,0,0,0.3)
-}
-#content .bangqlufsen_content .scrollBar span {
-    display: block;
-    width: 10%;
-    height: 5px;
-    border-radius: 10px;
-    background: #333;
-}
+ #content .bangqlufsen_content { display: none; overflow: hidden; } 
+ #content .bangqlufsen_content .logo img { width: 100px; margin: 20px auto; } 
+ #content .bangqlufsen_content .logo p { margin: 15px auto; width: 70%; position: relative; } 
+ #content .bangqlufsen_content .logo p::after { content: ''; width: 100%; height: 1px; background: #999; position: absolute; top:-7px; left: 0; } 
+ #content .bangqlufsen_content .shop_list { margin: 20px auto 30px; position: relative; width: 800%; left: 0; display: flex; } 
+ #content .bangqlufsen_content .shop_list li { width: 300px; margin: 15px 20px 5px; } 
+ #content .bangqlufsen_content .shop_list li img { width: 100%; border-radius: 20px; } 
+ #content .bangqlufsen_content .shop_list dl { text-align: start; width: 90%; margin: 20px auto 0; } 
+ #content .bangqlufsen_content .shop_list dt { font-size: 1.143rem; font-weight: 500; margin: 10px 0; } 
+ #content .bangqlufsen_content .shop_list dd { white-space: pre-line; } 
+ #content .bangqlufsen_content .scrollBar { width: 90%; height: 5px; margin: 10px auto 30px; border-radius:10px; background: rgba(0,0,0,0.3)}
+#content .bangqlufsen_content .scrollBar span { display: block; width: 10%; height: 5px; border-radius: 10px; background: #333; } 

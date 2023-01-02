@@ -1,16 +1,14 @@
 
 
-#content section{opacity: 0;}
-#content section h3{margin: 100px auto 0; width: 1400px; font-size: 4em; font-weight: 700; opacity: .5; text-align: start;}
-#content .tbl_wap table{width: 1400px; border-top: 2px solid #333; margin:50px auto 20px; font-size: 1.25em;}
-#content .tbl_wap table th{font-weight: 700;}
-#content .tbl_wap table tr{border-bottom: 1px solid #333; height: 100px;}
-#content .tbl_wap table tfoot{border-bottom: 2px solid #333;border-top: 2px solid #333;  font-weight: 700;}
-#content .tbl_wap p{ width: 1400px; margin: 0 auto;color:#999; text-align: end;}
-#content .link{position: relative; width: 2000px; margin: 100px auto 200px; opacity: 0;}
-#content .link p{font-weight: 500; text-align: center;font-size: 1.5em; font-weight: 500; 
-    color: #fff;position: absolute;left:50%; top:50%; transform: translate(-50%,-50%);}
-#content .link a{display: block; padding: 15px 50px; border: 1px solid #fff;width: 300px; border-radius: 50px;
-    color: #fff;position: absolute;left:50%; top:70%; transform: translate(-50%,-50%); font-size: 1.25em; font-weight: 700; transition: all .5s ease;}
-#content .link a:hover{background: rgba(255,255,255,0.3);}
-#content .investment01.moved,#content .investment02.moved,#content .link.moved{animation: up 1s ease forwards}
+#content section { opacity: 0; } 
+#content section h3 { margin: 100px auto 0; width: 1400px; font-size: 4em; font-weight: 700; opacity: .5; text-align: start; } 
+#content .tbl_wap table { width: 1400px; border-top: 2px solid #333; margin:50px auto 20px; font-size: 1.25em; } 
+#content .tbl_wap table th { font-weight: 700; } 
+#content .tbl_wap table tr { border-bottom: 1px solid #333; height: 100px; } 
+#content .tbl_wap table tfoot { border-bottom: 2px solid #333; border-top: 2px solid #333; font-weight: 700; } 
+#content .tbl_wap p { width: 1400px; margin: 0 auto; color:#999; text-align: end; } 
+#content .link { position: relative; width: 2000px; margin: 100px auto 200px; opacity: 0; } 
+#content .link p { font-weight: 500; text-align: center; font-size: 1.5em; font-weight: 500; color: #fff; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); } 
+#content .link a { display: block; padding: 15px 50px; border: 1px solid #fff; width: 300px; border-radius: 50px; color: #fff; position: absolute; left:50%; top:70%; transform: translate(-50%,-50%); font-size: 1.25em; font-weight: 700; transition: all .5s ease; } 
+#content .link a:hover { background: rgba(255,255,255,0.3); } 
+#content .investment01.moved,#content .investment02.moved,#content .link.moved { animation: up 1s ease forwards } 

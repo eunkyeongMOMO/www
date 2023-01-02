@@ -3,7 +3,7 @@
 @keyframes scroll { 
  0% { transform: translate(-50%,-20px) } 
  100% { transform: translate(-50%,0); } 
- } 
+ }
 
 .history_tabs { width: 1200px; height: 100px; margin:100px auto; border-top: 1px solid #0f57d8; border-bottom: 1px solid #0f57d8; justify-content: center; display: flex; } 
 .tabs_on { width: 100%; margin: 0 auto; position: fixed; top:0; left: 0; z-index: 60; background: #0f57d8; color: #fff; } 
@@ -40,5 +40,5 @@
 @keyframes fade-in { 
  from { opacity: 0; } 
  to { opacity: 1; } 
- } 
+ }
  #content .history dl.moved dd { animation: up .5s ease-out forwards; } 
